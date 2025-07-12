@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <>
-      <section className="min-h-screen bg-base-100 flex items-center justify-center px-4">
+      <section id="Contact" className="min-h-screen bg-base-100 flex items-center justify-center px-4">
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Left Info Panel */}

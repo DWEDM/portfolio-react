@@ -3,7 +3,7 @@ import React from 'react';
 const Collage = () => {
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div id="Gallery" className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div className="card shadow-md">
           <figure><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" className="rounded-lg" /></figure>
         </div>

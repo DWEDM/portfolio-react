@@ -15,3 +15,7 @@ p {
 a, li, button {
   font-family: 'Oxanium', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

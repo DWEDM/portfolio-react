@@ -3,7 +3,7 @@ import React from 'react';
 const Experience = () => {
   return (
     <>
-      <div className="hero bg-base-300 min-h-screen">
+      <div id="Experience" className="hero bg-base-300 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Box Office News!</h1>

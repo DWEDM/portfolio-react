@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import Collage from './components/Collage';
+import Collage from './components/Gallery';
 import Footer from './components/Footer';
 import ProfileCard from './components/ProfileCard';
 
