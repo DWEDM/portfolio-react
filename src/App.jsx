@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="font-sans lg:px-16 px-2 flex flex-col gap-y-4 m-4">
-        <div className="flex flex-col lg:flex-row "> 
+      <div className="font-sans lg:px-16 px-2 flex flex-col gap-y-4 m-auto mt-16">
+        <div className="flex flex-col lg:flex-row gap-x-8"> 
           <div className="order-1 lg:order-2">
             <ProfileCard/>
           </div>

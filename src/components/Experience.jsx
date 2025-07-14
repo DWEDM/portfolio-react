@@ -3,15 +3,15 @@ import React from 'react';
 const Experience = () => {
   return (
     <>
-      <div id="Experience" className="hero bg-base-300 min-h-screen">
+      <div id="Experience" className="hero h-auto border-t-2 border-accent">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
+          <div className="max-w-full m-4">
+            <h1 className="text-3xl font-bold my-2">My Experiences</h1>
+            <p className="mb-5 font-paragraph">
+              My skills are mainly hardware maintenance, PC repairs, and troubleshooting. Diagnosing 
+              and restoring malfunctioning hardware not only challenges me, but also gives me a sense 
+              of fulfillment especially when I see systems brought back to life.
             </p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
