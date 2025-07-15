@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../assets/profile.jpg'; // adjust path if needed
+import profileImg from '../../assets/profile.jpg'; 
 
 const ProfileCard = () => {
   return (
@@ -28,7 +28,7 @@ const ProfileCard = () => {
               </li>
               <li>
                 <a href="https://github.com/DWEDM" className="link link-hover flex gap-x-2">
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                   wyane(DWEDM)
                 </a>
               </li>

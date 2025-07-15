@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-    <footer className="footer sm:footer-horizontal bg-base-300 text-neutral-content p-10">
+    <footer className="footer sm:footer-horizontal bg-base-100 my-12 text-accent p-10 border-t-1 border-neutral-accent justify-between">
       <aside>
         <p>
           I made this site with:

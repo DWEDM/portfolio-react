@@ -13,19 +13,19 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-52 p-2 shadow">
-            <li><a href="#About">
+            <li><a href="">
               <i className="bi bi-person-lines-fill"></i>
               About Me
             </a></li>
-            <li><a href="#Experience">
+            <li><a href="">
               <i className="bi bi-hdd-network"></i>
               Experience
             </a></li>
-            <li><a href="#Contact">
+            <li><a href="">
               <i className="bi bi-telephone-inbound-fill"></i>
               Contact
             </a></li>
-            <li><a href="#Gallery">
+            <li><a href="">
               <i className="bi bi-collection"></i>
               My Gallery
             </a></li>
@@ -35,19 +35,19 @@ const Navbar = () => {
       </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-x-2">
-              <li><a href="#About">
+              <li><a href="">
                 <i className="bi bi-person-lines-fill"></i>
                 About Me
               </a></li>
-              <li><a href="#Experience">
+              <li><a href="">
                 <i className="bi bi-hdd-network"></i>
                 Experience
               </a></li>
-              <li><a href="#Contact">
+              <li><a href="">
                 <i className="bi bi-telephone-inbound-fill"></i>
                 Contact
               </a></li>
-              <li><a href="#Gallery">
+              <li><a href="">
                 <i className="bi bi-collection"></i>
                 My Gallery
               </a></li>

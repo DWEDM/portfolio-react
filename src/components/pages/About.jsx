@@ -32,3 +32,18 @@ const About = () => {
 };
 
 export default About;
+{/* 
+
+  <div className="flex flex-col lg:flex-row gap-x-8"> 
+    <div className="order-1 lg:order-2">
+      <ProfileCard/>
+    </div>
+    <div className="flex flex-col gap-y-2 order-2 lg:order-1">
+      <Hero />
+      <About />
+      <Experience />
+    </div>
+  </div>
+  <Contact />
+  
+*/}

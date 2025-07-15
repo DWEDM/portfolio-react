@@ -3,10 +3,9 @@ import React from 'react';
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="min-h-screen bg-base-100 flex items-center justify-center px-4">
+      <section id="Contact" className="max-h-screen bg-base-100 flex items-center justify-center px-4 mb-12">
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          {/* Left Info Panel */}
           <div className="bg-base-200 rounded-box p-6 shadow-md">
             <h1 className="text-4xl md:text-5xl font-bold text-base-content">
               Get in touch
@@ -14,9 +13,7 @@ const Contact = () => {
             <p className="text-lg mt-2 text-base-content/70">
               Fill in the form to start a conversation
             </p>
-
             <div className="mt-8 space-y-4">
-              {/* Address */}
               <div className="flex items-start gap-4">
                 <span className="text-2xl">
                   📍
@@ -25,8 +22,6 @@ const Contact = () => {
                   Acme Inc, Street, State,<br />Postal Code
                 </p>
               </div>
-
-              {/* Phone */}
               <div className="flex items-start gap-4">
                 <span className="text-2xl">
                   📞
@@ -35,8 +30,6 @@ const Contact = () => {
                   +44 1234567890
                 </p>
               </div>
-
-              {/* Email */}
               <div className="flex items-start gap-4">
                 <span className="text-2xl">
                   ✉️
@@ -47,8 +40,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-          {/* Form Panel */}
           <form className="bg-base-200 rounded-box p-6 shadow-md flex flex-col gap-4">
             <input
               type="text"
