@@ -3,7 +3,7 @@ import React from 'react';
 const Collage = () => {
   return (
     <>
-      <div id="Gallery" className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <section id="Gallery" className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div className="card shadow-md">
           <figure><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" className="rounded-lg" /></figure>
         </div>
@@ -40,7 +40,7 @@ const Collage = () => {
         <div className="card shadow-md">
           <figure><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="" className="rounded-lg" /></figure>
         </div>
-      </div>
+      </section>
     </>
   );
 };

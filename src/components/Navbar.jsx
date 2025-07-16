@@ -1,7 +1,7 @@
 import React from 'react';
 import avatarImg from '../assets/avatar.jpg'; // adjust path if needed
 
-const Navbar = () => {
+const Navbar = ({ setActivePage }) => {
   return (
     <>
     <div className="navbar bg-base-100 shadow-sm h-24">
@@ -31,23 +31,23 @@ const Navbar = () => {
             </a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">DWEDM.dev</a>
+        <a className="btn btn-ghost text-xl" onClick={() => setActivePage("Home")} >DWEDM.dev</a>
       </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-x-2">
-              <li><a href="">
+              <li><a onClick={() => setActivePage("About")}>
                 <i className="bi bi-person-lines-fill"></i>
                 About Me
               </a></li>
-              <li><a href="">
+              <li><a onClick={() => setActivePage("Experience")} >
                 <i className="bi bi-hdd-network"></i>
                 Experience
               </a></li>
-              <li><a href="">
+              <li><a onClick={() => setActivePage("Contact")} >
                 <i className="bi bi-telephone-inbound-fill"></i>
                 Contact
               </a></li>
-              <li><a href="">
+              <li><a onClick={() => setActivePage("Gallery")} >
                 <i className="bi bi-collection"></i>
                 My Gallery
               </a></li>

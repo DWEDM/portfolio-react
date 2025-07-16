@@ -5,10 +5,10 @@ const ProfileCard = () => {
   return (
     <>
       <div className="card bg-base-100 max-w-150 lg:w-120 shadow-sm mx-auto lg:mx-2 px-6">
-          <figure className="">
+          <figure className="fade-up-scroll">
               <img src={profileImg} alt="Graduation Pic (I like this pic I look like I'm content in life...)" className="rounded-xl" />
           </figure>
-          <div className="card-body items-left text-left px-0 text-neutral-content">
+          <div className="fade-up-scroll card-body items-left text-left px-0 text-neutral-content">
             <div className="card-actions flex gap-2">
               <button className="btn btn-primary flex-1 gap-x-2">
                 <i className="bi bi-file-earmark-post"></i>

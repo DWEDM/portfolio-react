@@ -4,6 +4,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.fade-up-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.3s ease-out;
+}
+
+.fade-up-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Traditional CSS: no @apply needed */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Quantico', sans-serif;
