@@ -4,7 +4,7 @@ import profileImg from '../../assets/profile.jpg';
 const ProfileCard = () => {
   return (
     <>
-      <div className="card bg-base-100 max-w-150 lg:w-120 shadow-sm mx-auto lg:mx-2 px-6">
+      <div className="card bg-base-100 w-80 sm:w-sm md:w-md lg:w-lg xl:w-xl shadow-sm mx-auto lg:mx-2 px-6">
           <figure className="fade-up-scroll">
               <img src={profileImg} alt="Graduation Pic (I like this pic I look like I'm content in life...)" className="rounded-xl" />
           </figure>

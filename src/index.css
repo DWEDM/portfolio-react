@@ -4,6 +4,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+:root {
+  --theme-toggle-refresh: 0;
+}
+
 .fade-up-scroll {
   opacity: 0;
   transform: translateY(24px);

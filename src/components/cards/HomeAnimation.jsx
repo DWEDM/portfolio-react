@@ -27,8 +27,8 @@ const HomeAnimation = () => {
 
 const StyledWrapper = styled.div`
   .loader path {
-    animation: dashArray 4s ease-in-out infinite,
-      dashOffset 4s linear infinite;
+    animation: dashArray 60s ease-in-out infinite,
+      dashOffset 60s linear infinite;
   }
 
   @keyframes dashArray {
