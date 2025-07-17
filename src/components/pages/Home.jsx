@@ -2,15 +2,16 @@ import React from 'react';
 
 import ProjectCards from '../cards/ProjectCards';
 import HomeAnimation from '../cards/HomeAnimation';
+import GitHubStats from '../GitHubStats';
 
-const Home = () => {
+const Home = ({ themeName }) => {
   return (
     <>
         <section id="Home" className="hero min-h-screen flex flex-col gap-y-12">
             <div className="hero-content flex-col min-w-full lg:gap-x-4 lg:flex-row-reverse">
                 <div className="bg-base-200 lg:w-auto h-auto rounded-xl shadow-xl fade-up-scroll">
                     <HomeAnimation/> 
-                    <div className="text-xs text-accent m-4">
+                    <div className="text-xs text-content m-4">
                         made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> 
                     </div>
                 </div>
@@ -40,6 +41,9 @@ const Home = () => {
                     </a>
                     </div>
                 </div>
+            </div>
+            <div id="" className="hero-content p-2 lg:p-4 h-auto w-full justify-start border-t-2 border-accent">
+                <GitHubStats themeName={themeName} />
             </div>
             <div id="" className="hero-content h-auto w-full justify-start border-t-2 border-accent">
                 <div className="flex-col lg:flex-row-reverse">

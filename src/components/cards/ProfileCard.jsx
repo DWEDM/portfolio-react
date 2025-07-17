@@ -8,7 +8,7 @@ const ProfileCard = () => {
           <figure className="fade-up-scroll">
               <img src={profileImg} alt="Graduation Pic (I like this pic I look like I'm content in life...)" className="rounded-xl" />
           </figure>
-          <div className="fade-up-scroll card-body items-left text-left px-0 text-neutral-content">
+          <div className="fade-up-scroll card-body items-left text-left px-0 text-accent">
             <div className="card-actions flex gap-2">
               <button className="btn btn-primary flex-1 gap-x-2">
                 <i className="bi bi-file-earmark-post"></i>

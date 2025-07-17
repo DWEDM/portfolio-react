@@ -6,7 +6,7 @@ import Capstone_Project from '../../assets/gallery/capscr1.png'
 const ProjectCards = () => {
     return(
         <>
-            <div className="fade-up-scroll card bg-base-200 w-full md:w-md lg:w-xl shadow-lg transition-all hover:scale-101">
+            <div className="fade-up-scroll card bg-base-200 w-full md:w-md lg:w-xl shadow-xl">
                 <figure className="p-2">
                 <img src={DENR_PENRO} alt="DENR PENRO" className="rounded-xl"/>
                 </figure>
@@ -25,7 +25,7 @@ const ProjectCards = () => {
                 </div>
                 </div>
             </div>
-            <div className="fade-up-scroll card bg-base-200 w-full md:w-md lg:w-xl shadow-sm transition-all hover:scale-101">
+            <div className="fade-up-scroll card bg-base-200 w-full md:w-md lg:w-xl shadow-xl">
                 <figure className="p-2">
                 <img src={Capstone_Project} alt="DENR PENRO" className="rounded-xl"/>
                 </figure>

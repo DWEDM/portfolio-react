@@ -21,7 +21,7 @@ const About = ({ setActivePage }) => {
                 and restoring malfunctioning hardware not only challenges me, but also gives me a sense 
                 of fulfillment especially when I see systems brought back to life.
               </p>
-              <div className="card card-body bg-base-200 border-2 my-4 border-accent shadow-2xl fade-up-scroll">
+              <div className="card card-body bg-base-100 border-2 my-4 border-accent shadow-2xl fade-up-scroll">
                 To me, learning is a privilege. It gives us the opportunity to grow, to adapt, 
                 and to overcome the challenges that shapes our very being.
               </div>
