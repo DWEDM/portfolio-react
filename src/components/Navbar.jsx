@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 
 const Navbar = ({ setActivePage, theme, setTheme }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm h-24">
+    <div className="navbar bg-base-100 bg-noise shadow-sm h-24">
       {/* Mobile menu */}
       <div className="navbar-start">
         <div className="dropdown">

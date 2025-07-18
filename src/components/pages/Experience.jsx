@@ -5,7 +5,7 @@ import capscr2 from '../../assets/gallery/capscr2.png';
 const Experience = () => {
   return (
     <>
-      <section id="Experience" className="hero h-auto">
+      <section id="Experience" className="hero h-auto bg-noise">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="max-w-full m-4">
             <h1 className="text-5xl font-bold my-2">My Experiences</h1>

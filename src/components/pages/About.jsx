@@ -6,7 +6,7 @@ import AboutHero from '../cards/AboutHero';
 const About = ({ setActivePage }) => {
   return (
     <>
-    <section id="About" className="hero h-auto">
+    <section id="About" className="hero h-auto bg-noise">
       <div className="hero-content text-left flex flex-col">
         <div className="flex flex-col lg:flex-row gap-x-8"> 
           <div className="order-1 lg:order-2">

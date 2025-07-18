@@ -7,12 +7,12 @@ import GitHubStats from '../GitHubStats';
 const Home = ({ themeName }) => {
   return (
     <>
-        <section id="Home" className="hero min-h-screen flex flex-col gap-y-12">
+        <section id="Home" className="hero bg-noise min-h-screen flex flex-col gap-y-12">
             <div className="hero-content flex-col min-w-full lg:gap-x-4 lg:flex-row-reverse">
-                <div className="bg-base-200 lg:w-auto h-auto rounded-xl shadow-xl fade-up-scroll">
+                <div className="bg-base-200 w-auto lg:w-xl h-auto rounded-xl shadow-xl fade-up-scroll">
                     <HomeAnimation/> 
                     <div className="text-xs text-content m-4">
-                        made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> 
+                        Made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> | modified by me :D
                     </div>
                 </div>
                 <div className="w-auto">

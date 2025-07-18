@@ -12,7 +12,7 @@ import Gallery from './components/pages/Gallery';
 
 function App() {
   // THEME STATE LIFTED HERE
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "bumblebee");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "retro");
 
   // Apply theme globally whenever it changes
   useEffect(() => {
@@ -61,7 +61,7 @@ function App() {
   return (
     <>
       <Navbar setActivePage={setActivePage} theme={theme} setTheme={setTheme} />
-      <div className="font-sans lg:px-12 px-2 py-2 flex flex-col m-auto">
+      <div className="font-sans bg-noise lg:px-12 px-2 py-2 flex flex-col m-auto">
         {renderPage()}
       </div>
       <Footer />

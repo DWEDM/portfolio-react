@@ -33,13 +33,33 @@ a, li, button {
   font-family: 'Oxanium', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+h1, h2, h3, p {
+  -webkit-font-smoothing: antialiased;
 }
 
-.react-github-calendar rect {
-  stroke: rgba(0, 0, 0, 0.2); /* border color */
-  stroke-width: 1px;
-  rx: 2; /* rounded corners */
-  ry: 2;
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;  /* Improves text rendering on macOS */
+  -moz-osx-font-smoothing: grayscale;  /* Firefox on macOS */
+  text-rendering: optimizeLegibility;
+
+}
+
+
+.bg-noise {
+  position: relative;
+  background-color: hsl(var(--b1));
+}
+
+.bg-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* So clicks pass through */
+  background-image: url("/src/assets/noise-bg.png");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  opacity: 0.15; /* Adjust noise intensity */
+  mix-blend-mode: overlay; /* Works with transparent noise PNG */
+  z-index: -2;
 }

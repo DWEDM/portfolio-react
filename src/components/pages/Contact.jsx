@@ -3,10 +3,10 @@ import React from 'react';
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="max-h-screen bg-base-100 flex items-center justify-center px-4 my-12">
-        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section id="Contact" className="max-h-screen bg-base-100 bg-noise flex items-center justify-center px-4 my-12">
+        <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <div className="fade-up-scroll bg-base-200 rounded-box p-6 shadow-md">
+          <div className="fade-up-scroll p-6">
             <h1 className="text-4xl md:text-5xl font-bold text-base-content">
               Get in touch
             </h1>
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form className="fade-up-scroll bg-base-200 rounded-box p-6 shadow-md flex flex-col gap-4">
+          <form className="fade-up-scroll bg-base-200 rounded-xl p-6 shadow-md flex flex-col gap-4">
             <input
               type="text"
               placeholder="Full Name"
@@ -49,11 +49,6 @@ const Contact = () => {
             <input
               type="email"
               placeholder="Email"
-              className="input input-bordered w-full"
-            />
-            <input
-              type="tel"
-              placeholder="Telephone Number"
               className="input input-bordered w-full"
             />
             <textarea
