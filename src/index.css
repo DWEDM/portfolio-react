@@ -36,3 +36,10 @@ a, li, button {
 html {
   scroll-behavior: smooth;
 }
+
+.react-github-calendar rect {
+  stroke: rgba(0, 0, 0, 0.2); /* border color */
+  stroke-width: 1px;
+  rx: 2; /* rounded corners */
+  ry: 2;
+}
