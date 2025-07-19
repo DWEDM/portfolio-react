@@ -42,10 +42,11 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div id="" className="hero-content p-2 lg:p-4 h-auto w-full justify-start border-t-2 border-accent">
+            <div id="" className="hero-content p-2 lg:p-4 h-auto w-full justify-start">
                 <GitHubStats themeName={themeName} />
             </div>
-            <div id="" className="hero-content h-auto w-full justify-start border-t-2 border-accent">
+            <div className='divide-accent'></div>
+            <div id="" className="hero-content h-auto w-full justify-start">
                 <div className="flex-col lg:flex-row-reverse">
                     <h1 className="text-4xl font-bold my-4 fade-up-scroll">So far, I've been a part of:</h1>
                     <div className="w-full h-auto flex-wrap flex gap-8">

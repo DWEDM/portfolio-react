@@ -3,32 +3,34 @@ import { fetchGitHubContributions } from "../utils/githubApi";
 
 const palettes = {
   forest: [
-    "rgba(20, 24, 20, 0.95)",   // 0
-    "rgba(45, 52, 45, 0.85)",   // 1
-    "rgba(70, 80, 70, 0.75)",   // 5+
-    "rgba(110, 125, 110, 0.65)",// 10+
-    "rgba(150, 170, 150, 0.55)" // 20+
+    "rgba(32, 39, 32, 1)",
+    "rgba(54, 90, 54, 1)",
+    "rgba(74, 135, 74, 1)",
+    "rgba(109, 186, 109, 1)",
+    "rgba(176, 242, 176, 1)",
   ],
   retro: [
-    "rgba(240, 240, 235, 0.95)",
-    "rgba(215, 215, 210, 0.85)",
-    "rgba(185, 185, 180, 0.75)",
-    "rgba(150, 150, 145, 0.65)",
-    "rgba(115, 115, 110, 0.55)"
+    "rgba(244, 240, 228, 1)",
+    "rgba(238, 205, 173, 1)",
+    "rgba(233, 173, 120, 1)",
+    "rgba(224, 140, 64, 1)",
+    "rgba(191, 90, 11, 1)",
   ],
-  vibrant: [  // GitHub-like colors
-    "#ebedf0",   // 0
-    "#9be9a8",   // 1-4
-    "#40c463",   // 5-9
-    "#30a14e",   // 10-19
-    "#216e39"    // 20+
-  ]
+    vibrant: [
+    "#ebedf0",
+    "#9be9a8",
+    "#40c463",
+    "#30a14e",
+    "#216e39",
+  ],
 };
+
 
 export default function GitHubStats({ themeName = "vibrant" }) {
   const [year, setYear] = useState(new Date().getFullYear());
   const [contributions, setContributions] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hoverInfo, setHoverInfo] = useState(null); // NEW state
 
   const activePalette = palettes[themeName] ?? palettes.vibrant;
 
@@ -68,7 +70,7 @@ export default function GitHubStats({ themeName = "vibrant" }) {
   const monthLabels = [];
   const weekWidth = 14;
   let lastMonth = "";
-  weeks.forEach((week, index) => {
+  weeks.forEach((week) => {
     const firstDay = week[0]?.date;
     if (firstDay) {
       const month = new Date(firstDay).toLocaleString("default", { month: "short" });
@@ -83,39 +85,49 @@ export default function GitHubStats({ themeName = "vibrant" }) {
 
   return (
     <div className="w-full text-content">
-      <div className="m-2 md:m-4 p-6 md:p-8 bg-base-100 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+      <div className="m-2 md:m-4 p-6 md:p-8 bg-base-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-x-auto">
+        {/* Header section */}
         <div className="flex justify-between items-center mb-6 gap-4 flex-wrap">
           <div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-content">
               My GitHub Contributions
             </h1>
-            <p className="text-sm text-content mt-1">
+            <p className="text-sm font-normal text-content mt-1">
               {year} Activity Overview
             </p>
           </div>
-          <div className="flex gap-1 md:gap-2">
+
+          <div className="flex items-center gap-2 flex-wrap justify-end">
             {years.map((y) => (
               <button
                 key={y}
-                className={`btn btn-sm md:btn-md px-3 md:px-4 btn-outline transition-all ${
-                  year === y ? 'btn-active btn-primary' : 'hover:bg-base-200'
-                }`}
-                onClick={() => setYear(y)}
+                type="button"
+                onClick={() => {
+                  setYear(y);
+                  setHoverInfo(null); // clear hover text when switching years
+                }}
+                aria-pressed={y === year}
+                className={
+                  "btn btn-xs sm:btn-sm md:btn-md " +
+                  (y === year ? "btn-primary" : "btn-outline")
+                }
               >
                 {y}
               </button>
             ))}
           </div>
+
         </div>
 
+        {/* Loading state */}
         {loading ? (
           <div className="flex justify-center items-center h-64">
             <span className="loading loading-spinner loading-lg text-primary"></span>
           </div>
         ) : (
-          <div className="relative">
+          <div className="flex flex-col items-center">
             {/* Month labels */}
-            <div className="flex text-xs text-accent mb-1">
+            <div className="flex text-xs text-content mb-1 ml-1">
               {monthLabels.map((month, index) => (
                 <div
                   key={index}
@@ -127,44 +139,42 @@ export default function GitHubStats({ themeName = "vibrant" }) {
               ))}
             </div>
 
-            {/* Contribution grid - Wrapped in overflow container */}
-            <div className="overflow-x-auto pb-2">
-              <div className="flex" style={{ width: `${weeks.length * 17}px` }}>
-                {weeks.map((week, wi) => (
-                  <div key={wi} className="flex flex-col gap-1 mr-1 relative z-0">
-                    {week.map((day, di) => (
-                      <div
-                        key={di}
-                        className="tooltip tooltip-top rounded-sm hover:scale-125 transition-transform duration-150 cursor-pointer relative z-10"
-                        data-tip={`${day.date}: ${day.count} contribution${day.count !== 1 ? 's' : ''}`}
-                        style={{
-                          backgroundColor: getColor(day.count),
-                          width: "14px",
-                          height: "14px",
-                          zIndex: "10",
-                        }}
-                      />
-                    ))}
-                  </div>
-                ))}
-              </div>
+            {/* Contribution grid */}
+            <div className="flex">
+              {weeks.map((week, wi) => (
+                <div key={wi} className="flex flex-col gap-[3px] mr-[3px]">
+                  {week.map((day, di) => (
+                    <div
+                      key={di}
+                      className="w-3 h-3 rounded-sm hover:scale-125 transition-transform duration-150 cursor-pointer"
+                      onMouseEnter={() =>
+                        setHoverInfo(`${day.date}: ${day.count} contribution${day.count !== 1 ? "s" : ""}`)
+                      }
+                      onMouseLeave={() => setHoverInfo(null)}
+                      style={{ backgroundColor: getColor(day.count) }}
+                    />
+                  ))}
+                </div>
+              ))}
             </div>
+
+            {/* Hover info displayed below */}
+            <p className="text-center mt-4 text-sm text-content">
+              {hoverInfo || "Hover over a day to see contributions"}
+            </p>
           </div>
         )}
 
+        {/* Legend */}
         {!loading && (
-          <div className="flex justify-end mt-4 text-xs text-accent">
+          <div className="flex justify-end mt-4 text-xs text-content">
             <div className="flex items-center gap-2">
               <span>Less</span>
               {[0, 1, 3, 5, 7].map((count) => (
                 <div
                   key={count}
-                  className="rounded-sm"
-                  style={{
-                    backgroundColor: getColor(count),
-                    width: "14px",
-                    height: "14px",
-                  }}
+                  className="w-3 h-3 rounded-sm"
+                  style={{ backgroundColor: getColor(count) }}
                 />
               ))}
               <span>More</span>
