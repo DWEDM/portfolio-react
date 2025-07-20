@@ -5,9 +5,8 @@ import capscr2 from '../../assets/gallery/capscr2.png';
 const Experience = () => {
   return (
     <>
-      <section id="Experience" className="hero h-auto bg-noise">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="max-w-full m-4">
+      <section id="Experience" className="flex flex-col h-auto bg-noise">
+        <div className='w-auto md:w-xl h-auto py-4 my-6 '>
             <h1 className="text-5xl font-bold my-2">My Experiences</h1>
             <p className="mb-5 font-paragraph">
                During my college thesis project, I've worked with a website called "<strong>Paws'N Claws</strong>" 
@@ -20,7 +19,6 @@ const Experience = () => {
                   Learn more
                 </button>
             </div>
-          </div>
         </div>
       </section>
     </>

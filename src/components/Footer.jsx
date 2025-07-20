@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </aside>
       <nav className="navbar-end w-auto h-auto">
-        <p className=" text-accent">© Copyright Denver Dela Masa</p>
+        <p className=" text-accent">© Copyright Denver Dela Masa, All rights reserved.</p>
       </nav>
     </footer>
     </>

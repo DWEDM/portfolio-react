@@ -1,64 +1,50 @@
 import React from 'react';
+import EmailJS from '../../utils/EmailJS';
 
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="max-h-screen bg-base-100 bg-noise flex items-center justify-center px-4 my-12">
+      <section id="Contact" className="bg-base-100 bg-noise flex items-center justify-center px-4 my-12">
         <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <div className="fade-up-scroll p-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-base-content">
-              Get in touch
+          {/*the uhhhhhhhhhhh labels */}
+          <div className="fade-up-scroll my-auto p-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-base-content">
+              Let's Connect
             </h1>
             <p className="text-lg mt-2 text-base-content/70">
-              Fill in the form to start a conversation
+              Got a question or idea? Drop me a message below.
             </p>
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-4">
-                <span className="text-2xl">
-                  📍
+                <span className="text-2xl my-auto">
+                  <i class="bi bi-geo-alt"></i>
                 </span>
-                <p className="font-semibold text-base-content">
-                  Acme Inc, Street, State,<br />Postal Code
+                <p className="font-semibold text-base-content my-auto">
+                  Malolos, Bulacan, Philippines<br />3000
                 </p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-2xl">
-                  📞
+                <span className="text-2xl my-auto">
+                  <i class="bi bi-telephone-plus"></i>
                 </span>
-                <p className="font-semibold text-base-content">
-                  +44 1234567890
+                <p className="font-semibold text-base-content my-auto">
+                  +63 954 244 9232
                 </p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-2xl">
-                  ✉️
+                <span className="text-2xl my-auto">
+                  <i class="bi bi-envelope-paper"></i>
                 </span>
-                <p className="font-semibold text-base-content">
-                  info@acme.org
+                <p className="font-semibold text-base-content my-auto">
+                  denver.delamasa@gmail.com
                 </p>
               </div>
             </div>
           </div>
-          <form className="fade-up-scroll bg-base-200 rounded-xl p-6 shadow-md flex flex-col gap-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="input input-bordered w-full"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="input input-bordered w-full"
-            />
-            <textarea
-              className="textarea textarea-bordered w-full h-32"
-              placeholder="Your Message"
-            ></textarea>
-            <button type="submit" className="btn btn-primary w-full md:w-40">
-              Submit
-            </button>
-          </form>
+
+          {/*the form */}
+          <EmailJS/>
 
         </div>
       </section>
