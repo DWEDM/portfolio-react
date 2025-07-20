@@ -125,7 +125,7 @@ export default function GitHubStats({ themeName = "vibrant" }) {
             <span className="loading loading-spinner loading-lg text-primary"></span>
           </div>
         ) : (
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start">
             {/* Month labels */}
             <div className="flex text-xs text-content mb-1 ml-1">
               {monthLabels.map((month, index) => (

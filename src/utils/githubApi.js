@@ -3,7 +3,7 @@ export async function fetchGitHubContributions(username, year) {
   const from = `${year}-01-01T00:00:00Z`;
   const to = `${year}-12-31T23:59:59Z`;
 
-  const res = await fetch("http://localhost:5000/github-contributions", {
+  const res = await fetch("https://portfolio-react-backend-5ia7.onrender.com/github-contributions", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, from, to }),
