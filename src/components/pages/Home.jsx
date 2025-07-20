@@ -42,7 +42,7 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div id="" className="hero-content p-2 lg:p-4 h-auto w-full justify-start">
+            <div id="" className="p-2 lg:p-4 h-auto w-full justify-start">
                 <GitHubStats themeName={themeName} />
             </div>
             <div className='divide-accent'></div>
