@@ -1,7 +1,7 @@
 import React from "react";
 
-import DENR_PENRO from '../../assets/gallery/DENR-PENRO.jpg';
-import Capstone_Project from '../../assets/gallery/capscr1.png'
+import DENR_PENRO from '../../assets/gallery/DENR-PENRO.webp';
+import Capstone_Project from '../../assets/gallery/capscr1.webp'
 
 const ProjectCards = () => {
     return(

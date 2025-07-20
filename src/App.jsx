@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import { initScrollReveal } from "./utils/scrollReveal";
+
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,6 +20,7 @@ function App() {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
+    initScrollReveal();
   }, [theme]);
 
   // Page state

@@ -1,5 +1,4 @@
 import React from 'react';
-import avatarImg from '../assets/avatar.jpg'; // (unused? optional)
 import ThemeToggle from './ThemeToggle';
 
 const Navbar = ({ setActivePage, theme, setTheme }) => {

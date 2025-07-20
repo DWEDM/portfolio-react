@@ -8,18 +8,6 @@
   --theme-toggle-refresh: 0;
 }
 
-.fade-up-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: all 0.3s ease-out;
-}
-
-.fade-up-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 /* Traditional CSS: no @apply needed */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Quantico', sans-serif;
@@ -62,4 +50,36 @@ html {
   opacity: 0.15; /* Adjust noise intensity */
   mix-blend-mode: overlay; /* Works with transparent noise PNG */
   z-index: -2;
+}
+
+
+.fade-up-scroll {
+  opacity: 0;
+  transform: translateY(0.5rem); /* ~8px, much less flicker */
+  transition:
+    opacity 0.4s cubic-bezier(.16,1,.3,1),
+    transform 0.4s cubic-bezier(.16,1,.3,1);
+  will-change: opacity, transform;
+}
+
+.fade-up-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Progressive enhancement: if JS fails, don’t leave content invisible */
+.no-js .fade-up-scroll {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

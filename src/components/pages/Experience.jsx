@@ -1,6 +1,6 @@
 import React from 'react';
-import capscr1 from '../../assets/gallery/capscr1.png'; 
-import capscr2 from '../../assets/gallery/capscr2.png'; 
+import capscr1 from '../../assets/gallery/capscr1.webp'; 
+import capscr2 from '../../assets/gallery/capscr2.webp'; 
 
 const Experience = () => {
   return (

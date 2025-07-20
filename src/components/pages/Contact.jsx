@@ -42,7 +42,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
           {/*the form */}
           <EmailJS/>
 
