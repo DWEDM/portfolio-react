@@ -2,21 +2,21 @@ import { useState, useEffect } from "react";
 import { fetchGitHubContributions } from "../utils/githubApi";
 
 const palettes = {
-  forest: [
-    "rgba(32, 39, 32, 1)",
-    "rgba(54, 90, 54, 1)",
-    "rgba(74, 135, 74, 1)",
-    "rgba(109, 186, 109, 1)",
-    "rgba(176, 242, 176, 1)",
+  dracula: [
+    "#2b2d3a",
+    "#3e4254", 
+    "#4e7460", 
+    "#50fa7b", 
+    "#8affb5", 
   ],
-  retro: [
-    "rgba(244, 240, 228, 1)",
-    "rgba(238, 205, 173, 1)",
-    "rgba(233, 173, 120, 1)",
-    "rgba(224, 140, 64, 1)",
-    "rgba(191, 90, 11, 1)",
+  nord: [
+    "#3b4252",
+    "#434c5e",
+    "#4c566a",
+    "#a3be8c",
+    "#dcefd8",
   ],
-    vibrant: [
+  vibrant: [
     "#ebedf0",
     "#9be9a8",
     "#40c463",
@@ -24,6 +24,7 @@ const palettes = {
     "#216e39",
   ],
 };
+
 
 
 export default function GitHubStats({ themeName = "vibrant" }) {

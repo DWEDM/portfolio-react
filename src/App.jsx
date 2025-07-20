@@ -12,7 +12,7 @@ import Gallery from './components/pages/Gallery';
 
 function App() {
   // THEME STATE LIFTED HERE
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "retro");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "nord");
 
   // Apply theme globally whenever it changes
   useEffect(() => {

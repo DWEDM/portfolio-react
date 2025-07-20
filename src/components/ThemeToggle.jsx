@@ -2,7 +2,7 @@ import { memo } from "react";
 
 const ThemeToggler = ({ theme, setTheme }) => {
   const toggleTheme = () => {
-    setTheme(theme === "retro" ? "forest" : "retro");
+    setTheme(theme === "nord" ? "dracula" : "nord");
   };
 
   return (
@@ -27,7 +27,7 @@ const ThemeToggler = ({ theme, setTheme }) => {
         type="checkbox"
         className="toggle toggle-primary"
         onChange={toggleTheme}
-        checked={theme === "forest"}
+        checked={theme === "dracula"}
       />
 
       {/* Moon Icon */}
