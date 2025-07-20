@@ -3,20 +3,20 @@ import { fetchGitHubContributions } from "../utils/githubApi";
 
 const palettes = {
   dracula: [
-    "#2b2d3a",
-    "#3e4254", 
-    "#4e7460", 
-    "#50fa7b", 
-    "#8affb5", 
+    "#2f303f", // 0 - Slightly lighter dark base
+    "#3a3d4f", // 1 - Slightly lighter gray
+    "#525566", // 2 - Medium grayish purple
+    "#7c7f99", // 3 - Lighter purple-gray
+    "#cfcfe6", // 4 - Lightest (most activity)
   ],
   nord: [
-    "#3b4252",
-    "#434c5e",
-    "#4c566a",
-    "#a3be8c",
-    "#dcefd8",
+    "#dce3eb", // 0 - Lightest (no activity)
+    "#b7c2ce", // 1 - Light gray-blue
+    "#91a1b4", // 2 - Mid cool tone
+    "#6c8299", // 3 - Darker blue-gray
+    "#4c566a", // 4 - Darkest (most activity)
   ],
-  vibrant: [
+    vibrant: [
     "#ebedf0",
     "#9be9a8",
     "#40c463",
@@ -24,7 +24,6 @@ const palettes = {
     "#216e39",
   ],
 };
-
 
 
 export default function GitHubStats({ themeName = "vibrant" }) {
