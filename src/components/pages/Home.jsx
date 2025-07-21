@@ -8,13 +8,7 @@ const Home = ({ themeName }) => {
   return (
     <>
         <section id="Home" className="hero bg-noise min-h-screen flex flex-col gap-y-12">
-            <div className="hero-content flex-col min-w-full lg:gap-x-4 lg:flex-row-reverse">
-                <div className="bg-base-200 w-auto lg:w-xl h-auto rounded-xl shadow-xl fade-up-scroll">
-                    <HomeAnimation/> 
-                    <div className="text-xs text-content m-4">
-                        Made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> | modified by me :D
-                    </div>
-                </div>
+            <div className="hero-content flex-col-reverse min-w-full lg:gap-x-4 lg:flex-row-reverse">
                 <div className="w-auto">
                     <h1 className="text-6xl font-bold fade-up-scroll">Technical, Creative, & Methodical.</h1>
                     <p className="py-6 fade-up-scroll">
@@ -41,11 +35,17 @@ const Home = ({ themeName }) => {
                     </a>
                     </div>
                 </div>
+                <div className="bg-base-200 w-auto lg:w-xl h-auto rounded-xl shadow-xl fade-up-scroll">
+                    <HomeAnimation/> 
+                    <div className="text-xs text-content m-4">
+                        Made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> | modified by me :D
+                    </div>
+                </div>
             </div>
-            <div id="" className="p-2 lg:p-4 h-auto w-full justify-start">
+            <div id="" className="p-2 lg:p-4 h-auto w-auto">
                 <GitHubStats themeName={themeName} />
             </div>
-            <div className='divide-accent'></div>
+            <div className='divide'></div>
             <div id="" className="hero-content h-auto w-full justify-start">
                 <div className="flex-col lg:flex-row-reverse">
                     <h1 className="text-4xl font-bold my-4 fade-up-scroll">So far, I've been a part of:</h1>
