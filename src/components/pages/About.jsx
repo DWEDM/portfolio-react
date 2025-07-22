@@ -3,8 +3,8 @@ import React from 'react';
 import ProfileCard from '../cards/ProfileCard';
 import AboutHero from '../cards/AboutHero';
 
-import ImageVCS from '../../assets/gallery/vcs.jpg';
-import ImageDrumming from '../../assets/gallery/drumming.jpg';
+import ImageVCS from '../../assets/gallery/vcs.webp';
+import ImageDrumming from '../../assets/gallery/drumming.webp';
 
 const About = ({ setActivePage }) => {
   return (
