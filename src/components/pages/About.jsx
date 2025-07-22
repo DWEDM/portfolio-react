@@ -42,7 +42,7 @@ const About = ({ setActivePage }) => {
           </div>
         </div>
         <div className="divider-default"></div>
-        <div className="flex flex-col w-2xl">
+        <div className="flex flex-col w-auto lg:w-2xl">
             <div className="my-4">
               <h1 className="text-3xl font-bold mt-12 mb-2 fade-up-scroll">What keeps me busy beyond coding?</h1>
               <p className="mb-5 font-paragraph fade-up-scroll">
@@ -72,28 +72,13 @@ const About = ({ setActivePage }) => {
               </p>
               <ul className="list-disc list-inside space-y-2 fade-up-scroll">
                 <li>
-                  <strong>Interpersonal Skills:</strong> ability to build strong connections
-                  and work well with others.
+                  <strong>People & Communication:</strong> I’m good at building genuine connections and working well with people, sharing ideas in a way that clicks, and teaming up with all kinds of groups. I always try to keep a positive, professional vibe no matter what.
                 </li>
                 <li>
-                  <strong>Communication Skills:</strong> effective in conveying ideas and
-                  collaborating with teams.
+                  <strong>Calm, Patient & Quick Learner:</strong> I’m a fast learner who stays patient and calm, even when things get tricky. I like taking my time to think things through and adapt, rather than rushing. When challenges pop up, I stay steady, figure out what needs to be done, and keep moving forward.
                 </li>
                 <li>
-                  <strong>Team Collaboration:</strong> easily connects and works with
-                  diverse groups.
-                </li>
-                <li>
-                  <strong>Adaptability:</strong> quick to learn from challenges and adjust
-                  to new situations.
-                </li>
-                <li>
-                  <strong>Positive Attitude:</strong> maintains an optimistic and
-                  professional approach.
-                </li>
-                <li>
-                  <strong>Resilience & Stress Management:</strong> thrives and performs well
-                  under pressure.
+                  <strong>Committed & Practical:</strong> I’m committed to what I do and take my responsibilities seriously, but I keep things grounded and practical. I focus on what needs to get done and treat it as my role, making sure I deliver without overcomplicating things.
                 </li>
               </ul>
             </div>
@@ -105,16 +90,3 @@ const About = ({ setActivePage }) => {
 };
 
 export default About;
-{/* 
-
-  <div className="flex flex-col lg:flex-row gap-x-8"> 
-    <div className="order-1 lg:order-2">
-      <ProfileCard/>
-    </div>
-    <div className="flex flex-col gap-y-2 order-2 lg:order-1">
-      <Hero />
-    </div>
-  </div>
-  <Contact />
-  
-*/}
