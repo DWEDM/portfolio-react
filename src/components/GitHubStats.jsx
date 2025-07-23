@@ -4,27 +4,26 @@ import { fetchGitHubContributions } from "../utils/githubApi";
 const palettes = {
   dracula: [
     "#2f303f", // 0 - Slightly lighter dark base
-    "#3a3d4f", // 1 - Slightly lighter gray
-    "#525566", // 2 - Medium grayish purple
-    "#7c7f99", // 3 - Lighter purple-gray
-    "#cfcfe6", // 4 - Lightest (most activity)
+    "#1e3a5f", // 1 - Deep cool blue
+    "#3b5d87", // 2 - Muted mid-blue
+    "#e07a35", // 3 - Warm orange
+    "#ffd65a", // 4 - Vibrant yellow-orange (most activity)
   ],
   nord: [
     "#dce3eb", // 0 - Lightest (no activity)
-    "#b7c2ce", // 1 - Light gray-blue
-    "#91a1b4", // 2 - Mid cool tone
-    "#6c8299", // 3 - Darker blue-gray
-    "#4c566a", // 4 - Darkest (most activity)
+    "#c9d0d7", // 1 - Cool gray-blue
+    "#a6b1bd", // 2 - Slightly darker muted tone
+    "#f08c42", // 3 - Warm orange (high activity)
+    "#ffcc66", // 4 - Vibrant warm orange-yellow (most activity)
   ],
-    vibrant: [
-    "#ebedf0",
-    "#9be9a8",
-    "#40c463",
-    "#30a14e",
-    "#216e39",
+  vibrant: [
+    "#0b1e36", // 0 - Dark navy base (no activity)
+    "#1e3a5f", // 1 - Deep cool blue
+    "#3a5d87", // 2 - Muted blue transitioning
+    "#f08c42", // 3 - Warm orange (high activity)
+    "#ffd65a", // 4 - Vibrant warm yellow (most activity)
   ],
 };
-
 
 export default function GitHubStats({ themeName = "vibrant" }) {
   const [year, setYear] = useState(new Date().getFullYear());

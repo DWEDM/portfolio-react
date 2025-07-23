@@ -4,11 +4,11 @@ import profileImg from '../../assets/profile.jpg';
 const ProfileCard = () => {
   return (
     <>
-      <div className="card bg-base-100 w-80 sm:w-sm md:w-md lg:w-lg xl:w-xl shadow-sm mx-auto lg:mx-2 p-6 border-2 border-accent">
+      <div className="card bg-base-100 w-80 sm:w-sm md:w-md lg:w-lg xl:w-xl shadow-lg mx-auto lg:mx-2 p-6 border-2 border-accent">
           <figure className="fade-up-scroll">
               <img src={profileImg} alt="Graduation Pic (I like this pic I look like I'm content in life...)" className="rounded-xl" />
           </figure>
-          <div className="fade-up-scroll card-body items-left text-left px-0 text-accent">
+          <div className="fade-up-scroll card-body items-left text-left px-0 text-content">
             <div className="card-actions flex gap-2">
               <button className="btn btn-primary flex-1 gap-x-2">
                 <i className="bi bi-file-earmark-post"></i>
