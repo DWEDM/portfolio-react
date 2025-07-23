@@ -4,7 +4,7 @@ import EmailJS from '../../utils/EmailJS';
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="bg-base-100 bg-noise flex items-center justify-center px-4 my-12">
+      <section id="Contact" className="bg-base-100 bg-noise flex items-center justify-center px-4 py-24">
         <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/*the uhhhhhhhhhhh labels */}
