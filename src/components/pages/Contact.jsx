@@ -18,7 +18,7 @@ const Contact = () => {
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-4">
                 <span className="text-2xl my-auto">
-                  <i class="bi bi-geo-alt"></i>
+                  <i className="bi bi-geo-alt"></i>
                 </span>
                 <p className="font-semibold text-base-content my-auto">
                   Malolos, Bulacan, Philippines<br />3000
@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl my-auto">
-                  <i class="bi bi-telephone-plus"></i>
+                  <i className="bi bi-telephone-plus"></i>
                 </span>
                 <p className="font-semibold text-base-content my-auto">
                   +63 954 244 9232
@@ -34,7 +34,7 @@ const Contact = () => {
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl my-auto">
-                  <i class="bi bi-envelope-paper"></i>
+                  <i className="bi bi-envelope-paper"></i>
                 </span>
                 <p className="font-semibold text-base-content my-auto">
                   denver.delamasa@gmail.com
