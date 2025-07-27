@@ -84,7 +84,7 @@ export default function GitHubStats({ themeName = "vibrant" }) {
 
   return (
     <div className="w-full text-content">
-      <div className="m-2 md:m-4 p-6 md:p-8 bg-base-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-x-auto">
+      <div className="m-2 md:m-4 p-6 md:p-8 bg-base-300 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-x-auto">
         {/* Header section */}
         <div className="flex justify-between items-center mb-6 gap-4 flex-wrap">
           <div>
