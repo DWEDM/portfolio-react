@@ -5,6 +5,7 @@ import AboutHero from '../cards/AboutHero';
 
 import ImageVCS from '../../assets/gallery/vcs.webp';
 import ImageDrumming from '../../assets/gallery/drumming.webp';
+import AboutProgramList from '../cards/AboutProgramList';
 
 const About = ({ setActivePage }) => {
   return (
@@ -37,7 +38,7 @@ const About = ({ setActivePage }) => {
               </a>
             </div>
             <div className="divider-default"></div>
-            <div className="flex flex-col w-auto lg:w-2xl">
+            <div className="flex flex-col max-w-full">
                 <div className="my-4">
                   <h1 className="text-3xl font-bold mt-12 mb-2 fade-up-scroll">What keeps me busy beyond coding?</h1>
                   <p className="mb-5 font-paragraph fade-up-scroll">
@@ -77,6 +78,10 @@ const About = ({ setActivePage }) => {
                     </li>
                   </ul>
                 </div>
+                <div className="my-4 fade-up-scroll">
+                  <AboutProgramList />
+                </div>
+
             </div>
           </div>
           <div className="order-1 lg:order-2">

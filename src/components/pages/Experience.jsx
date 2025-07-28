@@ -15,7 +15,7 @@ const Experience = () => {
             </p>
             <div className="card-actions">
                 <button className="btn btn-primary">
-                  <i class="bi bi-box-arrow-in-up-right"></i>
+                  <i className="bi bi-box-arrow-in-up-right"></i>
                   Learn more
                 </button>
             </div>

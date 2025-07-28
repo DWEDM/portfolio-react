@@ -1,7 +1,10 @@
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
 
-const Navbar = ({ setActivePage, theme, setTheme }) => {
+import { Link } from 'react-router-dom';
+
+
+const Navbar = ({ theme, setTheme }) => {
   return (
     <div className="navbar bg-base-100 bg-noise shadow-sm h-24">
       {/* Mobile menu */}
@@ -16,65 +19,65 @@ const Navbar = ({ setActivePage, theme, setTheme }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-lg dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-xs p-2 shadow"
           >
             <li>
-              <a onClick={() => setActivePage("About")}>
+              <Link to="/about">
                 <i className="bi bi-person-lines-fill" />
                 About Me
-              </a>
+              </Link>
             </li>
             <li>
-              <a onClick={() => setActivePage("Experience")}>
+              <Link to="/experience">
                 <i className="bi bi-hdd-network" />
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a onClick={() => setActivePage("Contact")}>
+              <Link to="/contact">
                 <i className="bi bi-telephone-inbound-fill" />
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a onClick={() => setActivePage("Gallery")}>
+              <Link to="/gallery">
                 <i className="bi bi-collection" />
                 My Gallery
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl" onClick={() => setActivePage("Home")}>
+        <Link className="btn btn-ghost text-xl" to="/">
           DWEDM.dev
-        </a>
+        </Link>
       </div>
 
       {/* Desktop menu */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-x-2">
           <li>
-            <a onClick={() => setActivePage("About")}>
+            <Link to="/about">
               <i className="bi bi-person-lines-fill" />
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setActivePage("Experience")}>
+            <Link to="/experience">
               <i className="bi bi-hdd-network" />
               Experience
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setActivePage("Contact")}>
+            <Link to="/contact">
               <i className="bi bi-telephone-inbound-fill" />
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setActivePage("Gallery")}>
+            <Link to="/gallery">
               <i className="bi bi-collection" />
               My Gallery
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

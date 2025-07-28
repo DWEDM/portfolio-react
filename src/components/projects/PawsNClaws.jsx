@@ -14,12 +14,12 @@ const PawsNClaws = () => {
                along with my 4 colleagues. My role mostly revolved on front-end design, development and UI functionality, 
                and a little bit of researching here and there...
             </p>
-            <div class="card bg-base-100 max-w-full shadow-sm">
-              <figure class="px-5 flex- flex-col gap-2">
-                <img src={capscr1} alt="Screenshot 1" class="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />
-                <img src={capscr2} alt="Screenshot 2" class="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />
+            <div className="card bg-base-100 max-w-full shadow-sm">
+              <figure className="px-5 flex- flex-col gap-2">
+                <img src={capscr1} alt="Screenshot 1" className="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />
+                <img src={capscr2} alt="Screenshot 2" className="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />
               </figure>
-              <div class="text-sm mb-8 mt-1 items-center text-center">
+              <div className="text-sm mb-8 mt-1 items-center text-center">
                 <p>Some screenshots of the site I worked with</p>
               </div>
             </div>

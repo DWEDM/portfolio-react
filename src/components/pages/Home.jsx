@@ -17,19 +17,19 @@ const Home = ({ themeName }) => {
                     Always down to learn new things and collaborate with people who love creating cool things too.
                     </p>
                     <div className="flex flex-wrap gap-x-4 gap-y-2">
-                    <a href="https://github.com/DWEDM" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
+                    <a href="https://github.com/DWEDM" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
                         <i className="bi bi-github"></i>
                         Github
                     </a>
-                    <a href="https://instagram.com/wanedanvers" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
+                    <a href="https://instagram.com/wanedanvers" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
                         <i className="bi bi-instagram"></i>
                         Instagram
                     </a>
-                    <a href="https://linkedin.com/in/denverdelamasa" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
+                    <a href="https://linkedin.com/in/denverdelamasa" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
                         <i className="bi bi-linkedin"></i>
                         LinkedIn
                     </a>
-                    <a href="mailto:denver.delamasa@gmail.com" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
+                    <a href="mailto:denver.delamasa@gmail.com" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
                         <i className="bi bi-envelope-at-fill"></i>
                         Email
                     </a>
@@ -38,7 +38,7 @@ const Home = ({ themeName }) => {
                 <div className="bg-base-200 w-auto lg:w-xl h-auto rounded-xl shadow-xl fade-up-scroll">
                     <HomeAnimation/> 
                     <div className="text-xs text-content m-4">
-                        Made by: SelfMadeSystem - <a href="https://www.uiverse.io" className="underline">uiverse.io</a> | modified by me :D
+                        Made by: SelfMadeSystem - <a href="https://www.uiverse.io" target="_blank" className="underline">uiverse.io</a> | modified by me :D
                     </div>
                 </div>
             </div>
