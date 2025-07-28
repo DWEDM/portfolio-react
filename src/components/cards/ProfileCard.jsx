@@ -19,7 +19,7 @@ const ProfileCard = () => {
                 Download
               </button>
             </div>
-            <ul className="list list-col-wrap gap-y-2 mt-4">
+            <ul className="list list-col-wrap gap-y-2 mt-4 items-start">
               <li>
                 <a href="mailto:denver.delamasa@gmail.com" target="_blank" className="link link-hover flex gap-x-2">
                   <i className="bi bi-envelope-at-fill"></i>
@@ -42,6 +42,12 @@ const ProfileCard = () => {
                 <a href="https://instagram.com/wanedanvers"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
                   <i className="bi bi-instagram"></i>
                   instagram.com/wanedanvers
+                </a>
+              </li>
+              <li>
+                <a href="https://uiverse.io/profile/DWEDM"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
+                  <img className="w-auto h-4 object-contain rounded-sm m-0 p-0" src="https://avatars.githubusercontent.com/u/103369066?s=280&v=4" alt="" />
+                  Uiverse.io
                 </a>
               </li>
             </ul>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ProfileCard from '../cards/ProfileCard';
 import AboutHero from '../cards/AboutHero';
@@ -30,12 +31,12 @@ const About = ({ setActivePage }) => {
                 Aside from that, my skills are also consisted with Art and Design, Mainly Illustration.
                 I also do coding, specifically front-end web development, hence this web portfolio...
               </p>
-              <a onClick={() => setActivePage("Gallery")}>
+              <Link to="/gallery">
                 <button className="btn btn-primary fade-up-scroll">
                   <i className="bi bi-collection"></i>
                   My Gallery
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="divider-default"></div>
             <div className="flex flex-col max-w-full">

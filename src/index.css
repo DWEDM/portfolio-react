@@ -83,3 +83,92 @@ html {
     transition: none !important;
   }
 }
+
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+
+.terminal-loader {
+  background-color: #1a1a1a;
+  padding: 1.5em;
+  font-family: 'Quantico', monospace;
+  color: #00ff00;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 0.3em 0.6em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.8em;
+  color: #eee;
+  font-size: 0.9em;
+}
+
+.terminal-controls .control {
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  margin-left: 0.4em;
+}
+.control.close { background: #e33; }
+.control.minimize { background: #ee0; }
+.control.maximize { background: #0b0; }
+
+.terminal-text {
+  margin-top: 2em;
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+}
+
+.type-line {
+  overflow: hidden;
+  border-right: 0.15em solid #00ff00;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+/* Stagger the delay on each line */
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 3.2s; }
+.delay-2 { animation-delay: 6.4s; }
+.delay-3 { animation-delay: 9.6s; }
+.delay-4 { animation-delay: 12.8s; }
+.delay-5 { animation-delay: 16.0s; }
+.delay-6 { animation-delay: 19.2s; }
+.delay-7 { animation-delay: 22.4s; }
+
+.delay-0, .delay-1, .delay-2, .delay-3, .delay-4, .delay-5, .delay-6, .delay-7::after {
+   border: 0;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
