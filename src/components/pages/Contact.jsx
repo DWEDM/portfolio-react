@@ -6,26 +6,9 @@ const Contact = () => {
     <>
       <section id="Contact" className="bg-base-100 bg-noise flex items-center justify-center px-4 py-4">
         <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          
-          {/*the uhhhhhhhhhhh labels */}
-          <div className="fade-up-scroll my-auto p-6">
-            <h1 className="text-5xl md:text-7xl font-bold text-base-content">
-              Let's Connect
-            </h1>
-            <p className="text-lg mt-2 text-base-content/70">
-              Got a question or idea? Drop me a message below.
-            </p>
-            <div className="mt-8 space-y-4">
-              <div className="flex items-start gap-4">
-                <span className="text-2xl my-auto">
-                  <i className="bi bi-envelope-paper"></i>
-                </span>
-                <p className="font-semibold text-base-content my-auto">
-                  denver.delamasa@gmail.com
-                </p>
-              </div>
-            </div>
-            <div class="coffee-container my-4 w-full h-[280px]">
+          {/* Coffee art */}
+          <div className="fade-up-scroll grid place-items-center w-full h-full">
+            <div class="coffee-container my-auto w-[400px] h-[280px]">
               <div class="coffee-header">
                 <div class="coffee-header__buttons coffee-header__button-one"></div>
                 <div class="coffee-header__buttons coffee-header__button-two"></div>
@@ -44,9 +27,29 @@ const Contact = () => {
               </div>
               <div class="coffee-footer"></div>
             </div>
+            <div className="space-y-2 max-w-[400px] mt-4">
+              <span className="text-sm my-auto flex mx-auto text-start">
+                <p className="font-semibold text-base-content my-auto text-xs">
+                  Your message will be sent to:
+                </p>
+                <i class="bi bi-send-fill my-auto ml-2"></i>
+                <p className="font-semibold text-base-content my-auto text-xs ml-1">
+                  denver.delamasa@gmail.com
+                </p>
+              </span>
+            </div>
           </div>
-          {/*the form */}
-          <EmailJS/>
+          {/*the labels & form */}
+          
+          <div className="w-full">
+            <h1 className="text-5xl md:text-6xl font-extrabold mt-4 text-base-content">
+              Let's Connect!
+            </h1>
+            <p className="text-lg mt-2 text-base-content/70">
+              Got a question or idea? Drop me a message below...
+            </p>
+            <EmailJS/>
+          </div>
           <style>
             {`
               .coffee-container {

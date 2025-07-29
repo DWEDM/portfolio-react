@@ -66,14 +66,14 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="Full Name"
-          className="input input-bordered w-full"
+          className="input input-bordered w-full py-2"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="input input-bordered w-full"
+          className="input input-bordered w-full py-2"
           required
         />
         <textarea
