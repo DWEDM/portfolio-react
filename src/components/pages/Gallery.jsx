@@ -33,40 +33,42 @@ const Collage = () => {
   const images = useMemo(() => shuffle(importedImages), []);
 
   return (
-    <div className="bg-base-100 bg-noise">
-      {/* Header */}
-      <div className="w-auto md:w-xl flex flex-col gap-y-2 mt-12">
-        <h1 className="fade-up-scroll text-5xl font-bold">My Gallery</h1>
-        <p className="fade-up-scroll max-w-prose">
-          Here’s a bunch of photos that pretty much sum me up—my work, my hobbies,
-          and the stuff I enjoy doing. No fancy order, just moments that show what I’m about.
-        </p>
-      </div>
+    <div className="hero">
+      <div className="hero-content flex flex-col text-left">
+        {/* Header */}
+        <div className="w-full flex flex-col gap-y-2 mt-12">
+          <h1 className="fade-up-scroll text-5xl font-bold">My Gallery</h1>
+          <p className="fade-up-scroll max-w-prose">
+            Here’s a bunch of photos that pretty much sum me up—my work, my hobbies,
+            and the stuff I enjoy doing. No fancy order, just moments that show what I’m about.
+          </p>
+        </div>
 
-      {/* Masonry Gallery */}
-      <section id="Gallery" className="columns-2 md:columns-3 gap-4 my-12">
-        {images.length === 0 ? (
-          <div className="text-center opacity-70 col-span-full">
-            No images found in <code>src/assets/gallery/</code>.
-          </div>
-        ) : (
-          images.map((img, i) => (
-            <div key={i} className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md">
-              <img
-                src={img.src}
-                alt={img.alt || `Gallery image ${i + 1}`}
-                className="w-full h-auto object-cover rounded-lg"
-                loading="lazy"
-              />
+        {/* Masonry Gallery */}
+        <section id="Gallery" className="columns-2 md:columns-3 gap-4 my-12">
+          {images.length === 0 ? (
+            <div className="text-center opacity-70 col-span-full">
+              No images found in <code>src/assets/gallery/</code>.
             </div>
-          ))
-        )}
-      </section>
+          ) : (
+            images.map((img, i) => (
+              <div key={i} className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={img.src}
+                  alt={img.alt || `Gallery image ${i + 1}`}
+                  className="w-full h-auto object-cover rounded-lg"
+                  loading="lazy"
+                />
+              </div>
+            ))
+          )}
+        </section>
 
-      <div className="w-full h-auto m-auto text-center">
-        <p className="fade-up-scroll m-auto w-full p-2">More content to be added here.</p>
+        <div className="w-full h-auto m-auto text-center">
+          <h1 className="fade-up-scroll m-auto w-full p-2">More content to be added here.</h1>
+        </div>
+
       </div>
-
     </div>
   );
 };

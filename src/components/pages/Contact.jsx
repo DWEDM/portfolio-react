@@ -4,8 +4,8 @@ import EmailJS from '../../utils/EmailJS';
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="bg-base-100 bg-noise flex items-center justify-center px-4 py-4">
-        <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section id="Contact" className="hero mx-auto bg-base-100 bg-noise flex items-center justify-center px-4 py-4">
+        <div className="hero-content h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Coffee art */}
           <div className="fade-up-scroll grid place-items-center w-full h-full">
             <div class="coffee-container my-auto w-[400px] h-[280px]">

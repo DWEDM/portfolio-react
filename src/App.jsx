@@ -67,6 +67,7 @@ function App() {
 
   return (
     <>
+    <div className="min-h-screen flex flex-col">
       <Navbar theme={theme} setTheme={setTheme} />
       <div className="font-sans bg-noise lg:px-12 px-2 py-2 flex flex-col m-auto">
         <Routes>
@@ -78,6 +79,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+    </div>
     </>
   );
 }
