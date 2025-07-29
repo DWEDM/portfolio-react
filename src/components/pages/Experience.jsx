@@ -23,7 +23,7 @@ const Experience = () => {
   return (
     <>
       <section id="Experience" className="flex flex-col h-auto bg-noise">
-        <div className='w-auto md:w-full h-auto py-4 my-6 '>
+        <div className='w-auto max-w-5xl md:w-full h-auto py-4 my-6 mx-auto '>
             <h1 className="text-5xl font-bold my-2">This page is currently under construction</h1>
               <div className="bg-base-200 m-auto p-4 h-auto rounded-xl shadow-xl flex flex-col space-y-full">
 <div className="terminal-loader h-[60vh]">
