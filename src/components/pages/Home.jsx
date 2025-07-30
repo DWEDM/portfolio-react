@@ -47,8 +47,11 @@ const Home = ({ themeName }) => {
             </div>
             <div className='divide'></div>
             <div id="" className="hero-content h-auto w-full justify-start">
-                <div className="flex-col lg:flex-row-reverse">
-                    <h1 className="text-4xl font-bold my-4 fade-up-scroll">So far, I've been a part of:</h1>
+                <div className="flex-col lg:flex-row-reverse fade-up-scroll">
+                    <h1 className="text-4xl font-bold mb-2">What I’ve Worked On:</h1>
+                    <p className="text-base-content mb-7 text-md">
+                        A showcase of the projects and experiences that shaped me...
+                    </p>
                     <div className="w-full h-auto flex-wrap flex gap-8">
                         <ProjectCards/>
                     </div>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <div className="navbar bg-base-100 bg-noise shadow-sm h-24">
+    <div className="navbar bg-base-100 bg-noise shadow-sm h-24 lg:px-12 px-2">
       {/* Mobile menu */}
       <div className="navbar-start">
         <div className="dropdown">
