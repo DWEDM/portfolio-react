@@ -42,10 +42,9 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div id="" className="p-0 lg:p-4 h-auto w-full lg:w-auto overflow-x-auto m-auto">
+            <div id="" className="p-0 lg:p-4 h-auto w-full lg:w-auto overflow-x-auto mx-auto">
                 <GitHubStats themeName={themeName} />
             </div>
-            <div className='divide'></div>
             <div id="" className="hero-content h-auto w-full justify-start">
                 <div className="flex-col lg:flex-row-reverse fade-up-scroll">
                     <h1 className="text-4xl font-bold mb-2">What I’ve Worked On:</h1>
