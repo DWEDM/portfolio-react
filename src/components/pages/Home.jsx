@@ -42,13 +42,15 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div className="hero-content h-full text-content my-8">
+            <div id="" className="p-0 lg:p-4 h-auto w-full lg:w-auto overflow-x-auto mx-auto">
                 <GitHubStats themeName={themeName} />
             </div>
             <div id="" className="hero-content h-auto w-full justify-start">
-                <div className="flex-col lg:flex-row-reverse">
-                    <h1 className="text-4xl font-bold fade-up-scroll">What I've Worked On:</h1>
-                    <p className="pb-6 fade-up-scroll">A look at the things I've been part of and contributed to...</p>
+                <div className="flex-col lg:flex-row-reverse fade-up-scroll">
+                    <h1 className="text-4xl font-bold mb-2">What I’ve Worked On:</h1>
+                    <p className="text-base-content mb-7 text-md">
+                        A showcase of the projects and experiences that shaped me...
+                    </p>
                     <div className="w-full h-auto flex-wrap flex gap-8">
                         <ProjectCards/>
                     </div>
