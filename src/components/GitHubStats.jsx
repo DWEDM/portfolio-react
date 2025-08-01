@@ -222,7 +222,7 @@ export default function GitHubStats({ themeName = "spicy" }) {
         </footer>
         
         {/* Year Selector - Always visible */}
-        <div className="flex items-center gap-2 flex-wrap justify-end mt-4">
+        <div className="flex items-center gap-2 justify-center mt-4">
           {years.map((y) => (
             <button
               key={y}
