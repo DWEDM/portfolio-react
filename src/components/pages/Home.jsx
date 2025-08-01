@@ -42,7 +42,7 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div className="w-[85vw]">
+            <div className="w-[85vw] xl:w-auto">
                 <GitHubStats themeName={themeName} />   
             </div>
             <div id="" className="hero-content h-auto w-full justify-start">
