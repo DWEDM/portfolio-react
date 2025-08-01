@@ -113,30 +113,11 @@ export default function GitHubStats({ themeName = "spicy" }) {
               {year} Activity Overview
             </p>
           </div>
-
-          {/* Year Selector - Always visible */}
-          <div className="flex items-center gap-2 flex-wrap justify-end">
-            {years.map((y) => (
-              <button
-                key={y}
-                onClick={() => {
-                  setYear(y);
-                  setHoverInfo(null);
-                  setLoading(true);
-                }}
-                aria-pressed={y === year}
-                className={`btn btn-sm ${y === year ? "btn-primary" : "btn-ghost"}`}
-                disabled={loading && y === year}
-              >
-                {y}
-              </button>
-            ))}
-          </div>
         </header>
 
         {/* Main Content - Fixed height container */}
         <div 
-          className="relative" 
+          className="relative overflow-x-auto" 
           style={{ 
             minHeight: `${GRID_HEIGHT + MONTH_LABEL_HEIGHT + 32}px` // Grid + labels + padding
           }}
@@ -208,14 +189,14 @@ export default function GitHubStats({ themeName = "spicy" }) {
               ))}
             </div>
           </div>
+        </div>
 
-          {/* Hover Info */}
-          <div className="mt-3 w-full text-center">
-            <p className="text-sm text-content/80 min-h-6">
-              {loading ? "Loading contribution data..." : 
-               hoverInfo || "Hover over squares to view contribution details"}
-            </p>
-          </div>
+        {/* Hover Info */}
+        <div className="mt-3 w-full text-center">
+          <p className="text-sm text-content/80 min-h-6">
+            {loading ? "Loading contribution data..." : 
+              hoverInfo || "Hover over squares to view contribution details"}
+          </p>
         </div>
 
         {/* Legend - Always visible */}
@@ -239,6 +220,25 @@ export default function GitHubStats({ themeName = "spicy" }) {
             <span className="text-content">More</span>
           </div>
         </footer>
+        
+        {/* Year Selector - Always visible */}
+        <div className="flex items-center gap-2 flex-wrap justify-end mt-4">
+          {years.map((y) => (
+            <button
+              key={y}
+              onClick={() => {
+                setYear(y);
+                setHoverInfo(null);
+                setLoading(true);
+              }}
+              aria-pressed={y === year}
+              className={`btn btn-xs md:btn-sm ${y === year ? "btn-primary" : "btn-ghost"}`}
+              disabled={loading && y === year}
+            >
+              {y}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

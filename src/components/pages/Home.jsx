@@ -42,8 +42,8 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             </div>
-            <div id="" className="p-0 lg:p-4 h-auto w-full lg:w-auto overflow-x-auto mx-auto">
-                <GitHubStats themeName={themeName} />
+            <div className="w-[85vw]">
+                <GitHubStats themeName={themeName} />   
             </div>
             <div id="" className="hero-content h-auto w-full justify-start">
                 <div className="flex-col lg:flex-row-reverse fade-up-scroll">
