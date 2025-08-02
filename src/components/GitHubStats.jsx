@@ -102,19 +102,18 @@ export default function GitHubStats({ themeName = "spicy" }) {
 
   return (
     <div className="w-full text-content mb-24">
-      <div className="m-2 md:m-4 p-6 md:p-8 bg-base-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-x-auto">
-        {/* Header Section - Always visible */}
-        <header className="flex justify-between items-center mb-6 gap-4 flex-wrap">
-          <div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-content">
-              GitHub Contributions
-            </h1>
-            <p className="text-sm font-normal text-content/80 mt-1">
-              {year} Activity Overview
-            </p>
-          </div>
-        </header>
-
+      {/* Header Section - Always visible */}
+      <header className="flex justify-between items-center mb-6 gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-content">
+            GitHub Contributions
+          </h1>
+          <p className="text-sm font-normal text-content/80 mt-1">
+            {year} Activity Overview
+          </p>
+        </div>
+      </header>
+      <div className="p-6 md:p-8 bg-base-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-x-auto">
         {/* Main Content - Fixed height container */}
         <div 
           className="relative overflow-x-auto" 

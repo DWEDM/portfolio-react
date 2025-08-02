@@ -39,7 +39,7 @@ const Collage = () => {
         <div className="w-full flex flex-col gap-y-2 mt-12">
           <h1 className="fade-up-scroll text-5xl font-bold">My Gallery</h1>
           <p className="fade-up-scroll max-w-prose">
-            Here’s a bunch of photos that pretty much sum me up—my work, my hobbies,
+            Here’s a bunch of photos that pretty much sum up my work, my hobbies,
             and the stuff I enjoy doing. No fancy order, just moments that show what I’m about.
           </p>
         </div>

@@ -168,42 +168,58 @@ const AboutProgramList = () => {
         <li>
             <strong className="block mb-4 text-xl">Other Tools</strong>
             <ul className="pl-4 space-y-6">
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://img.icons8.com/color/512/brave-web-browser.png" alt="icon" />
-                Brave Browser – Privacy-focused web browser
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn-icons-png.flaticon.com/512/732/732205.png" alt="icon" />
-                Chrome – Popular web browser by Google
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="icon" />
-                Discord – Chat platform for communities and teams
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg" alt="icon" />
-                Firefox – Open-source web browser by Mozilla
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://www.image-line.com/innovaeditor/assets/FLStudio20_MasterIcon.png" alt="icon" />
-                FL Studio – Digital audio workstation for music production
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn.prod.website-files.com/657639ebfb91510f45654149/67b4c29681d1fb959e3bbba9_logo-512.png" alt="icon" />
-                Messenger – Facebook's messaging app
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/OBS_Studio_Logo.svg/250px-OBS_Studio_Logo.svg.png" alt="icon" />
-                OBS Studio – Screen recording and streaming software
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Olive_Video_Editor_Logo.png" alt="icon" />
-                Olive – Free and open-source video editor
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYrT7QBvmjKVqHWpnUYJPx9P8CUsr0qi9mg&s" alt="icon" />
-                Zoom – Video conferencing and meeting platform
-            </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" alt="icon" />
+                    Arch Linux – A popular, user-friendly Linux distribution based on Debian.
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://img.icons8.com/color/512/brave-web-browser.png" alt="icon" />
+                    Brave Browser – Privacy-focused web browser
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn-icons-png.flaticon.com/512/732/732205.png" alt="icon" />
+                    Chrome – Popular web browser by Google
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="icon" />
+                    Discord – Chat platform for communities and teams
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg" alt="icon" />
+                    Firefox – Open-source web browser by Mozilla
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://www.image-line.com/innovaeditor/assets/FLStudio20_MasterIcon.png" alt="icon" />
+                    FL Studio – Digital audio workstation for music production
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/2/27/I3_window_manager_logo.svg" alt="icon" />
+                    i3wm – A lightweight, tiling window manager for Linux/BSD.
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://images.seeklogo.com/logo-png/8/3/linux-tux-logo-png_seeklogo-84509.png" alt="icon" />
+                    Linux – A free, open-source operating system kernel
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn.prod.website-files.com/657639ebfb91510f45654149/67b4c29681d1fb959e3bbba9_logo-512.png" alt="icon" />
+                    Messenger – Facebook's messaging app
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/OBS_Studio_Logo.svg/250px-OBS_Studio_Logo.svg.png" alt="icon" />
+                    OBS Studio – Screen recording and streaming software
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Olive_Video_Editor_Logo.png" alt="icon" />
+                    Olive – Free and open-source video editor
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://w7.pngwing.com/pngs/503/133/png-transparent-ubuntu-plain-logo-icon-thumbnail.png" alt="icon" />
+                    Ubuntu – A popular, user-friendly Linux distribution based on Debian.
+                </li>
+                <li className="flex items-center gap-3">
+                    <img className="w-6 h-6 object-contain rounded-sm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYrT7QBvmjKVqHWpnUYJPx9P8CUsr0qi9mg&s" alt="icon" />
+                    Zoom – Video conferencing and meeting platform
+                </li>
             </ul>
         </li>
         </ul>

@@ -1,25 +1,23 @@
 import React from 'react';
-import profileImg from '../../assets/profile.jpg'; 
+import profileImg from '../../assets/gradpic.jpg'; 
 
 const ProfileCard = () => {
   return (
     <>
       <div className="fade-up-scroll card bg-base-100 max-w-md lg:w-md shadow-lg mx-auto lg:mx-2 p-6 border-2 border-accent">
           <figure>
-              <img src={profileImg} alt="Graduation Pic (I like this pic I look like I'm content in life...)" className="rounded-xl" />
+              <img src={profileImg} alt="Graduation Pic" className="rounded-xl max-h-[400px] w-full object-cover" />
           </figure>
-          <div className="card-body items-left text-left px-0 text-content">
-            <div className="card-actions flex gap-2">
-              <button className="btn btn-primary flex-1 gap-x-2">
-                <i className="bi bi-file-earmark-post"></i>
-                Resume
-              </button>
-              <button className="btn btn-primary gap-x-2">
-                <i className="bi bi-download"></i>
-                Download
-              </button>
+          <div className="card-body items-left text-left px-0 text-content w-full">
+            <div className="card-actions flex w-full p-auto">
+              <div className="tooltip w-full flex flex-col" data-tip="For security and convenience, my resume is available on LinkedIn.">
+                <button className="btn btn-primary btn-wide gap-x-2 mx-auto">
+                  <i className="bi bi-file-earmark-post"></i>
+                  My Resume
+                </button>
+              </div>
             </div>
-            <ul className="list list-col-wrap gap-y-2 mt-4 items-start">
+            <ul className="list list-col-wrap gap-y-2 mt-4 items-start align-middle">
               <li>
                 <a href="mailto:denver.delamasa@gmail.com" target="_blank" className="link link-hover flex gap-x-2">
                   <i className="bi bi-envelope-at-fill"></i>
@@ -46,7 +44,7 @@ const ProfileCard = () => {
               </li>
               <li>
                 <a href="https://uiverse.io/profile/DWEDM"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
-                  <img className="w-auto h-4 object-contain rounded-sm m-0 p-0" src="https://avatars.githubusercontent.com/u/103369066?s=280&v=4" alt="" />
+                  <img className="w-auto h-4 object-contain items-center align-middle rounded-sm m-0 p-0" src="https://avatars.githubusercontent.com/u/103369066?s=280&v=4" alt="" />
                   Uiverse.io
                 </a>
               </li>

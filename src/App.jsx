@@ -69,7 +69,7 @@ function App() {
     <>
     <div className="min-h-screen flex flex-col">
       <Navbar theme={theme} setTheme={setTheme} />
-      <div className="font-sans bg-noise lg:px-12 px-2 py-2 flex flex-col m-auto overflow-x-hidden">
+      <div className="font-sans bg-noise lg:px-24 px-2 py-2 flex flex-col m-auto overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home themeName={theme} />} />
           <Route path="/about" element={<About themeName={theme} />} />

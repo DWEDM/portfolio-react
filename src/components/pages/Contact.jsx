@@ -4,11 +4,11 @@ import EmailJS from '../../utils/EmailJS';
 const Contact = () => {
   return (
     <>
-      <section id="Contact" className="hero mx-auto bg-base-100 bg-noise flex items-center justify-center px-4 py-4">
+      <section id="Contact" className="hero mx-auto bg-base-100 bg-noise flex items-center justify-center px-4 pb-4">
         <div className="hero-content h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Coffee art */}
           <div className="fade-up-scroll grid place-items-center w-full h-full">
-            <div class="coffee-container my-auto w-full max-w-[400px] h-[280px] scale-60 sm:scale-75 lg:scale-100">
+            <div class="coffee-container my-auto w-full max-w-[400px] h-[280px] scale-60 sm:scale-75 lg:scale-100 shadow-xl">
               <div class="coffee-header">
                 <div class="coffee-header__buttons coffee-header__button-one"></div>
                 <div class="coffee-header__buttons coffee-header__button-two"></div>
@@ -28,12 +28,12 @@ const Contact = () => {
               <div class="coffee-footer"></div>
             </div>
             <div className="space-y-2 w-auto max-w-[400px] mt-4">
-              <span className="text-sm my-auto flex mx-auto text-start">
+              <span className="text-sm my-auto flex md:flex-row flex-col mx-auto text-start">
                 <p className="font-semibold text-base-content my-auto text-xs">
                   Your message will be sent to:
                 </p>
-                <i class="bi bi-send-fill my-auto ml-2"></i>
                 <p className="font-semibold text-base-content my-auto text-xs ml-1">
+                <i class="bi bi-send-fill my-auto mx-2 ml-2"></i>
                   denver.delamasa@gmail.com
                 </p>
               </span>

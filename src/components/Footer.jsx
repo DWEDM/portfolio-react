@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-    <footer className="footer sm:footer-horizontal bg-base-100 bg-noise text-info lg:px-12 px-2 py-24 border-t-1 border-base-300 shadow-xl justify-between">
-      <aside>
+    <footer className="footer sm:footer-horizontal bg-base-100 bg-noise text-info lg:px-28 px-8 py-24 border-t-1 border-base-300 shadow-xl justify-between">
+      <div>
         <p>
           I made this site with:
         </p>
@@ -43,10 +43,10 @@ const Footer = () => {
             daisyUI
           </p>
         </div>
-      </aside>
-      <nav className="navbar-end w-auto h-auto">
+      </div>
+      <div className="navbar-end w-auto h-auto">
         <p className=" text-info">© Copyright Denver Dela Masa, All rights reserved.</p>
-      </nav>
+      </div>
     </footer>
     </>
   );
