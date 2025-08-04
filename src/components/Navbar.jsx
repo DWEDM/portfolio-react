@@ -19,7 +19,7 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content  rounded-box gap-y-2 z-1 mt-3 w-xs p-2 shadow"
+            className="menu menu-lg dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-xs max-w-md p-2 shadow"
           >
             <li>
               <Link to="/about">

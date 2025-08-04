@@ -1,26 +1,47 @@
 import React, { useMemo } from "react";
 
-// --- Auto-import every image in src/assets/gallery/ at build time ---
-// Supported extensions: add/remove as needed.
-const modules = import.meta.glob("../../assets/gallery/*.{png,jpg,jpeg,gif,webp,avif}", {
+
+import GalleryAnimated from '../animations/GalleryAnimation';
+
+// --- Auto-import media from src/assets/gallery/ ---
+const modules = import.meta.glob("../../assets/gallery/*.{png,jpg,jpeg,gif,webp,avif,webm,mp4,mov}", {
   eager: true,
-  import: "default", // get the processed URL directly
+  import: "default",
 });
 
-// Convert Vite glob object -> array of {src, alt}
-const importedImages = Object.entries(modules).map(([path, url]) => {
-  const filename = path.split("/").pop() || "";
-  const alt = filename
-    .replace(/\.[^.]+$/, "") // strip extension
-    .replace(/[-_]/g, " ")   // nicer label
-    .replace(/\s+/g, " ")
-    .trim();
-  return { src: url, alt };
-});
+// Media processing with robust error handling
+const importedMedia = Object.entries(modules)
+  .map(([path, url]) => {
+    try {
+      if (!url) return null;
+      
+      const filename = path.split("/").pop() || "untitled";
+      const extension = (filename.split('.').pop() || '').toLowerCase();
+      
+      const alt = filename
+        .replace(/\.[^.]+$/, "") // Remove extension
+        .replace(/[-_]+/g, " ")  // Replace underscores/dashes with spaces
+        .replace(/\s{2,}/g, " ") // Collapse multiple spaces
+        .trim() || `Gallery item`;
+      
+      const isVideo = ['webm', 'mp4', 'mov'].includes(extension);
+      
+      return { 
+        src: url, 
+        alt,
+        type: isVideo ? 'video' : 'image',
+        extension
+      };
+    } catch (e) {
+      console.error(`Error processing file: ${path}`, e);
+      return null;
+    }
+  })
+  .filter(Boolean); // Remove any null entries
 
-// Simple Fisher–Yates shuffle (pure)
+// Optimized Fisher-Yates shuffle
 function shuffle(array) {
-  const arr = array.slice();
+  const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -28,46 +49,88 @@ function shuffle(array) {
   return arr;
 }
 
+// Video MIME type helper
+const getVideoMimeType = (ext) => {
+  const types = {
+    mp4: 'video/mp4',
+    mov: 'video/quicktime',
+    webm: 'video/webm'
+  };
+  return types[ext] || `video/${ext}`;
+};
+
 const Collage = () => {
-  // Shuffle once per mount so gallery order feels organic but stable during a session
-  const images = useMemo(() => shuffle(importedImages), []);
+  const mediaItems = useMemo(() => shuffle(importedMedia), []);
 
   return (
     <div className="hero">
       <div className="hero-content flex flex-col text-left">
         {/* Header */}
-        <div className="w-full flex flex-col gap-y-2 mt-12">
-          <h1 className="fade-up-scroll text-5xl font-bold">My Gallery</h1>
-          <p className="fade-up-scroll max-w-prose">
-            Here’s a bunch of photos that pretty much sum up my work, my hobbies,
-            and the stuff I enjoy doing. No fancy order, just moments that show what I’m about.
-          </p>
+        <div className="flex flex-row align-middle items-center justify-start mt-12 gap-x-8 gap-y-2">
+          <div className="hidden md:flex">
+            <GalleryAnimated />
+          </div>
+          <div className="w-full flex flex-col gap-2">
+            <h1 className="fade-up-scroll text-5xl font-bold flex flex-row align-middle items-center gap-x-4">
+              <div className="flex md:hidden my-auto">
+                <GalleryAnimated />
+              </div>
+              My Gallery
+            </h1>
+            <p className="fade-up-scroll max-w-prose">
+              Here's a collection of photos and videos that capture my work, hobbies, 
+              and passions. No particular order, just moments that represent what I enjoy.
+            </p>
+          </div>
         </div>
 
         {/* Masonry Gallery */}
         <section id="Gallery" className="columns-2 md:columns-3 gap-4 my-12">
-          {images.length === 0 ? (
+          {mediaItems.length === 0 ? (
             <div className="text-center opacity-70 col-span-full">
-              No images found in <code>src/assets/gallery/</code>.
+              No media found in <code>src/assets/gallery/</code>.
             </div>
           ) : (
-            images.map((img, i) => (
-              <div key={i} className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md">
-                <img
-                  src={img.src}
-                  alt={img.alt || `Gallery image ${i + 1}`}
-                  className="w-full h-auto object-cover rounded-lg"
-                  loading="lazy"
-                />
+            mediaItems.map((item, i) => (
+              <div 
+                key={`${item.alt}-${i}`} 
+                className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md"
+              >
+                {item.type === 'video' ? (
+                  <div className="relative pb-[56.25%]"> {/* 16:9 aspect ratio container */}
+                    <video
+                      controls
+                      loop
+                      muted
+                      playsInline
+                      className="absolute inset-0 w-full h-full object-cover rounded-lg bg-gray-100"
+                      preload="metadata"
+                    >
+                      <source 
+                        src={item.src} 
+                        type={getVideoMimeType(item.extension)} 
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-auto object-cover rounded-lg bg-gray-100"
+                    loading="lazy"
+                    width="100%"
+                    height="auto"
+                  />
+                )}
               </div>
             ))
           )}
         </section>
 
         <div className="w-full h-auto m-auto text-center">
-          <h1 className="fade-up-scroll m-auto w-full p-2">More content to be added here.</h1>
+          <h1 className="fade-up-scroll m-auto w-full p-2">More content coming soon!</h1>
         </div>
-
       </div>
     </div>
   );

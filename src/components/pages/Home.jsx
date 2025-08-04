@@ -2,7 +2,7 @@ import React from 'react';
 
 import WorkedWithCards from '../cards/WorkedWithCards';
 import CurrentlyWorkingCards from '../cards/CurrentlyWorkingCards';
-import HomeAnimation from '../cards/HomeAnimation';
+import HomeAnimation from '../animations/HomeAnimation';
 import GitHubStats from '../GitHubStats';
 
 const Home = ({ themeName }) => {
