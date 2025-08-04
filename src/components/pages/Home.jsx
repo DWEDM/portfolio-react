@@ -8,7 +8,7 @@ import GitHubStats from '../GitHubStats';
 const Home = ({ themeName }) => {
   return (
     <>
-        <section id="Home" className="hero mx-auto bg-noise min-h-screen flex flex-col gap-y-12">
+        <section id="Home" className="hero mx-auto  min-h-screen flex flex-col gap-y-12">
             <div className="hero-content flex-col-reverse lg:gap-x-4 lg:flex-row">
                 <div className="w-auto">
                     <h1 className="text-6xl font-bold fade-up-scroll">Technical, Creative, & Methodical.</h1>

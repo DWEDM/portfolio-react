@@ -11,7 +11,7 @@ import AboutProgramList from '../cards/AboutProgramList';
 const About = ({ setActivePage }) => {
   return (
     <>
-    <section id="About" className="hero h-auto bg-noise pt-12">
+    <section id="About" className="hero h-auto  pt-12">
       <div className="hero-content text-left flex flex-col items-start">
         <div className="flex flex-col lg:flex-row gap-x-8"> 
           <div className="flex flex-col gap-y-2 order-2 lg:order-1">
@@ -23,7 +23,7 @@ const About = ({ setActivePage }) => {
                 and restoring malfunctioning hardware not only challenges me, but also gives me a sense 
                 of fulfillment especially when I see systems brought back to life.
               </p>
-              <div className="card card-body bg-base-100 border-2 my-4 border-accent shadow-2xl fade-up-scroll">
+              <div className="card card-body  border-2 my-4 border-accent shadow-2xl fade-up-scroll">
                 To me, learning is a privilege. It gives us the opportunity to grow, to adapt, 
                 and to overcome the challenges that shapes our very being.
               </div>

@@ -22,7 +22,7 @@ const Experience = () => {
 
   return (
     <>
-      <section id="Experience" className="hero flex flex-col h-auto bg-noise">
+      <section id="Experience" className="hero flex flex-col h-auto ">
         <div className='hero-content flex flex-col w-auto max-w-5xl md:w-full h-auto py-4 my-6 mx-auto '>
             <h1 className="text-5xl font-bold my-2">
               This page is currently under construction

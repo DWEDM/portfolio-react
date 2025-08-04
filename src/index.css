@@ -48,7 +48,7 @@ html {
   background-image: url("/src/assets/noise-bg.png");
   background-repeat: repeat;
   background-size: 128px 128px;
-  opacity: 0.15; /* Adjust noise intensity */
+  opacity: 0.10; /* Adjust noise intensity */
   mix-blend-mode: overlay; /* Works with transparent noise PNG */
   z-index: -2;
 }
@@ -171,4 +171,17 @@ html {
 
 @keyframes blink {
   50% { border-color: transparent; }
+}
+
+/* For Fira Code font (recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+.xterm .xterm-viewport {
+  background-color: #000 !important;
+  border-radius: 0 0 0.5rem 0.5rem;
+  scrollbar-width: none;
+}
+
+.xterm .xterm-viewport::-webkit-scrollbar {
+  display: none;
 }

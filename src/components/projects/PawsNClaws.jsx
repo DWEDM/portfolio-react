@@ -14,7 +14,7 @@ const PawsNClaws = () => {
                along with my 4 colleagues. My role mostly revolved on front-end design, development and UI functionality, 
                and a little bit of researching here and there...
             </p>
-            <div className="card bg-base-100 max-w-full shadow-sm">
+            <div className="card  max-w-full shadow-sm">
               <figure className="px-5 flex- flex-col gap-2">
                 <img src={capscr1} alt="Screenshot 1" className="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />
                 <img src={capscr2} alt="Screenshot 2" className="rounded-xl shadow-xl hover:scale-110 transition-all duration-200" />

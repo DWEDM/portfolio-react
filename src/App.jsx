@@ -11,6 +11,7 @@ import About from './components/pages/About';
 import Experience from './components/pages/Experience';
 import Contact from './components/pages/Contact';
 import Gallery from './components/pages/Gallery';
+import ConsoleApps from './components/pages/ConsoleApps';
 
 import { BrowserRouter, useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -67,15 +68,16 @@ function App() {
 
   return (
     <>
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-noise">
       <Navbar theme={theme} setTheme={setTheme} />
-      <div className="font-sans bg-noise lg:px-24 px-2 py-2 flex flex-col m-auto overflow-x-hidden">
+      <div className="font-sans lg:px-24 px-2 py-2 flex flex-col m-auto overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home themeName={theme} />} />
           <Route path="/about" element={<About themeName={theme} />} />
           <Route path="/experience" element={<Experience themeName={theme} />} />
           <Route path="/contact" element={<Contact themeName={theme} />} />
           <Route path="/gallery" element={<Gallery themeName={theme} />} />
+          <Route path="/console-app" element={<ConsoleApps themeName={theme} />} />
         </Routes>
       </div>
       <Footer />

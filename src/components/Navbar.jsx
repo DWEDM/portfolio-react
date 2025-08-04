@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <div className="navbar bg-base-100 bg-noise shadow-sm h-24  lg:px-28 px-8">
+    <div className="navbar  shadow-sm h-24 lg:px-28 px-8">
       {/* Mobile menu */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -19,7 +19,7 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-xs p-2 shadow"
+            className="menu menu-lg dropdown-content  rounded-box gap-y-2 z-1 mt-3 w-xs p-2 shadow"
           >
             <li>
               <Link to="/about">
@@ -43,6 +43,12 @@ const Navbar = ({ theme, setTheme }) => {
               <Link to="/gallery">
                 <i className="bi bi-collection" />
                 My Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/console-app">
+                <i className="bi bi-terminal-fill"></i>
+                Console Appications
               </Link>
             </li>
           </ul>
@@ -79,6 +85,12 @@ const Navbar = ({ theme, setTheme }) => {
               My Gallery
             </Link>
           </li>
+            <li>
+              <Link to="/console-app">
+                <i className="bi bi-terminal-fill"></i>
+                Console Appications
+              </Link>
+            </li>
         </ul>
       </div>
 

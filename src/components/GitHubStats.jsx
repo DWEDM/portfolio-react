@@ -123,7 +123,7 @@ export default function GitHubStats({ themeName = "spicy" }) {
         >
           {/* Loading overlay */}
           {loading && (
-            <div className="absolute inset-0 flex justify-center items-center bg-base-100/80 z-10">
+            <div className="absolute inset-0 flex justify-center items-center /80 z-10">
               <span className="loading loading-spinner loading-lg text-primary"></span>
             </div>
           )}
