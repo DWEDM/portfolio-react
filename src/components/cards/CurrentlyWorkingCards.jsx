@@ -1,7 +1,7 @@
 import React from "react";
 
-import freecodecamp from '../../assets/gallery/freecodecamp-first-activity.png';
-import kodekloud from '../../assets/gallery/KodeKloud-Docker.png';
+import freecodecamp from '../../assets/gallery/freecodecamp-first-activity.webp';
+import kodekloud from '../../assets/gallery/KodeKloud-Docker.webp';
 
 const ProjectCards = () => {
     return(
