@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import ProfileCard from '../cards/ProfileCard';
 import AboutHero from '../cards/AboutHero';
 
-import ImageVCS from '../../assets/gallery/vcs.webp';
-import ImageDrumming from '../../assets/gallery/drumming.webp';
 import AboutProgramList from '../cards/AboutProgramList';
 
 const About = ({ setActivePage }) => {
@@ -43,21 +41,10 @@ const About = ({ setActivePage }) => {
                 <div className="my-4">
                   <h1 className="text-3xl font-bold mt-12 mb-2 fade-up-scroll">What keeps me busy beyond coding?</h1>
                   <p className="mb-5 font-paragraph fade-up-scroll">
-                    On weekends, I’m actively involved in my local church, Bethany United Methodist Church. 
-                    I play the drums for the Praise and Worship team and also help out as part of the technical staff. 
                   </p>
                   <div className="my-12 flex-wrap flex text-accent">
-                    <img src={ImageDrumming} alt="picture of me playing Drums" />
-                    <p className="m-auto p-2 text-xs">Photo taken at April 16, 2025</p>
-                  </div>
-                  <p className="mb-5 font-paragraph fade-up-scroll">
-                    I’ve also taken part in church activities like teaching at Vacation Church School and supporting 
-                    yearly city district events, such as the East Bulacan District Christmas Institute, where I serve 
-                    as technical staff.
-                  </p>
-                  <div className="my-12 flex-wrap flex text-accent">
-                    <img src={ImageVCS} alt="picture of me operating the mixer console" />
-                    <p className="m-auto p-2 text-xs">Photo taken at July 20, 2023</p>
+                    <img src="" alt="" />
+                    <p className="m-auto p-2 text-xs"></p>
                   </div>
                 </div>
                 <div className="my-4">
