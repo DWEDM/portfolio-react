@@ -45,7 +45,7 @@ const Contact = () => {
             <h1 className="text-5xl md:text-6xl font-extrabold mt-4 text-base-content">
               Let's Connect!
             </h1>
-            <p className="text-lg mt-2 text-base-content/70">
+            <p className="text-lg mt-2 mb-4 text-base-content/70">
               Got a question or idea? Drop me a message below...
             </p>
             <EmailJS/>
