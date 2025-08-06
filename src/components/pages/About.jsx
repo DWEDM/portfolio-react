@@ -43,7 +43,7 @@ const About = ({ setActivePage }) => {
                   <p className="mb-5 font-paragraph fade-up-scroll">
                   </p>
                   <div className="my-12 flex-wrap flex text-accent">
-                    <img src="" alt="" />
+                    <img src={null} alt={null} /> {/* bruh I'm thinking this through... */}
                     <p className="m-auto p-2 text-xs"></p>
                   </div>
                 </div>

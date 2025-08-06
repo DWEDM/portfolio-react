@@ -1,10 +1,8 @@
 import React, { useMemo } from "react";
-
-
 import GalleryAnimated from '../animations/GalleryAnimation';
 
 // --- Auto-import media from src/assets/gallery/ ---
-const modules = import.meta.glob("../../assets/gallery/*.{png,jpg,jpeg,gif,webp,avif,webm,mp4,mov}", {
+const modules = import.meta.glob("../../assets/gallery/*.{png,jpg,jpeg,gif,webp}", {
   eager: true,
   import: "default",
 });
@@ -16,7 +14,6 @@ const importedMedia = Object.entries(modules)
       if (!url) return null;
       
       const filename = path.split("/").pop() || "untitled";
-      const extension = (filename.split('.').pop() || '').toLowerCase();
       
       const alt = filename
         .replace(/\.[^.]+$/, "") // Remove extension
@@ -24,13 +21,9 @@ const importedMedia = Object.entries(modules)
         .replace(/\s{2,}/g, " ") // Collapse multiple spaces
         .trim() || `Gallery item`;
       
-      const isVideo = ['webm', 'mp4', 'mov'].includes(extension);
-      
       return { 
         src: url, 
         alt,
-        type: isVideo ? 'video' : 'image',
-        extension
       };
     } catch (e) {
       console.error(`Error processing file: ${path}`, e);
@@ -48,16 +41,6 @@ function shuffle(array) {
   }
   return arr;
 }
-
-// Video MIME type helper
-const getVideoMimeType = (ext) => {
-  const types = {
-    mp4: 'video/mp4',
-    mov: 'video/quicktime',
-    webm: 'video/webm'
-  };
-  return types[ext] || `video/${ext}`;
-};
 
 const Collage = () => {
   const mediaItems = useMemo(() => shuffle(importedMedia), []);
@@ -78,7 +61,7 @@ const Collage = () => {
               My Gallery
             </h1>
             <p className="fade-up-scroll max-w-prose">
-              Here's a collection of photos and videos that capture my work, hobbies, 
+              Here's a collection of photos that capture my work, hobbies, 
               and passions. No particular order, just moments that represent what I enjoy.
             </p>
           </div>
@@ -96,33 +79,14 @@ const Collage = () => {
                 key={`${item.alt}-${i}`} 
                 className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md"
               >
-                {item.type === 'video' ? (
-                  <div className="relative pb-[56.25%]"> {/* 16:9 aspect ratio container */}
-                    <video
-                      controls
-                      loop
-                      muted
-                      playsInline
-                      className="absolute inset-0 w-full h-full object-cover rounded-lg bg-gray-100"
-                      preload="metadata"
-                    >
-                      <source 
-                        src={item.src} 
-                        type={getVideoMimeType(item.extension)} 
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                ) : (
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className="w-full h-auto object-cover rounded-lg bg-gray-100"
-                    loading="lazy"
-                    width="100%"
-                    height="auto"
-                  />
-                )}
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-auto object-cover rounded-lg bg-gray-100"
+                  loading="lazy"
+                  width="100%"
+                  height="auto"
+                />
               </div>
             ))
           )}
