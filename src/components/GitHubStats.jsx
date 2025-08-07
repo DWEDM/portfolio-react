@@ -61,7 +61,7 @@ export default function GitHubStats({ themeName = "spicy" }) {
   useEffect(() => {
     const loadContributions = async () => {
       try {
-        const data = await fetchGitHubContributions("DWEDM", year);
+        const data = await fetchGitHubContributions("denverdelamasa", year);
         setContributions(data);
       } catch (error) {
         console.error("Failed to load GitHub contributions:", error);

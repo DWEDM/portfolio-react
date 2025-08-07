@@ -25,9 +25,9 @@ const ProfileCard = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/DWEDM" target="_blank" className="link link-hover flex gap-x-2">
+                <a href="https://github.com/denverdelamasa" target="_blank" className="link link-hover flex gap-x-2">
                   <i className="bi bi-github"></i>
-                  wyane(DWEDM)
+                  wyane(denverdelamasa)
                 </a>
               </li>
               <li>
@@ -43,7 +43,7 @@ const ProfileCard = () => {
                 </a>
               </li>
               <li>
-                <a href="https://uiverse.io/profile/DWEDM"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
+                <a href="https://uiverse.io/profile/denverdelamasa"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
                   <img className="w-auto h-4 object-contain items-center align-middle rounded-sm m-0 p-0" src="https://avatars.githubusercontent.com/u/103369066?s=280&v=4" alt="" />
                   Uiverse.io
                 </a>

@@ -18,7 +18,7 @@ const Home = ({ themeName }) => {
                     Always down to learn new things and collaborate with people who love creating cool things too.
                     </p>
                     <div className="flex flex-wrap gap-x-4 gap-y-2">
-                    <a href="https://github.com/DWEDM" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
+                    <a href="https://github.com/denverdelamasa" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
                         <i className="bi bi-github"></i>
                         Github
                     </a>

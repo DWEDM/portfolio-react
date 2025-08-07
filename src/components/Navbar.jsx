@@ -54,7 +54,7 @@ const Navbar = ({ theme, setTheme }) => {
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to="/">
-          DWEDM.dev
+          wyane.dev
         </Link>
       </div>
 
