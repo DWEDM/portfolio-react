@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
           {/*the labels & form */}
           
-          <div className="w-full">
+          <div className="w-full fade-up-scroll">
             <h1 className="text-5xl md:text-6xl font-extrabold mt-4 text-base-content">
               Let's Connect!
             </h1>

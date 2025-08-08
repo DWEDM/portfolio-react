@@ -9,7 +9,7 @@ const XTerminal = () => {
   useEffect(() => {
     const term = new Terminal({
       fontFamily: '"Fira Code", monospace',
-      fontSize: 14,
+      fontSize: 16, // Increased font size
       cursorBlink: true,
       theme: {
         background: '#000000',
@@ -24,30 +24,32 @@ const XTerminal = () => {
     term.open(terminalRef.current);
     fitAddon.fit();
 
+    // Auto-fit on window resize
+    const handleResize = () => fitAddon.fit();
+    window.addEventListener('resize', handleResize);
+
     // Initial prompt
     term.write('\x1b[32m$\x1b[0m ');
 
     // Input handling
     term.onData((data) => {
-      // Handle Enter key
       if (data === '\r') {
         term.write('\r\n\x1b[32m$\x1b[0m ');
-      } 
-      // Handle backspace
-      else if (data === '\x7f') {
+      } else if (data === '\x7f') {
         term.write('\b \b');
-      }
-      // Normal input
-      else {
+      } else {
         term.write(data);
       }
     });
 
-    return () => term.dispose();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      term.dispose();
+    };
   }, []);
 
   return (
-    <div className="bg-black text-gray-200 p-6 rounded-lg w-full max-w-2xl font-mono">
+    <div className="bg-black text-gray-200 p-6 rounded-lg w-full max-w-8xl font-mono shadow-lg">
       {/* Window controls */}
       <div className="flex justify-between items-center mb-4">
         <div className="flex space-x-2">
@@ -57,9 +59,9 @@ const XTerminal = () => {
         </div>
         <p className="text-sm text-gray-400">bash</p>
       </div>
-      
+
       {/* Terminal container */}
-      <div ref={terminalRef} className="h-64" />
+      <div ref={terminalRef} className="h-96" /> {/* Increased height */}
     </div>
   );
 };
