@@ -1,4 +1,3 @@
-// GalleryAnimated.jsx
 import React from "react";
 
 const GalleryAnimated = () => {
@@ -70,7 +69,7 @@ const GalleryAnimated = () => {
         }
       `}</style>
 
-      <div className="GalleryAnimated md:scale-130 scale-100 fade-up-scroll">
+      <div className="GalleryAnimated md:scale-130 scale-100 fade-up-scroll shadow-lg">
         <div className="gallery-before" />
         <div className="gallery-after" />
       </div>

@@ -49,12 +49,12 @@ const Collage = () => {
     <div className="hero">
       <div className="hero-content flex flex-col text-left">
         {/* Header */}
-        <div className="flex flex-row align-middle items-center justify-start mt-12 gap-x-8 gap-y-2">
-          <div className="hidden md:flex">
+        <div className="w-full px-8 flex flex-row align-middle items-start justify-start mt-12 gap-x-8 gap-y-2">
+          <div className="hidden md:flex my-auto">
             <GalleryAnimated />
           </div>
-          <div className="w-full flex flex-col gap-2">
-            <h1 className="fade-up-scroll text-5xl font-bold flex flex-row align-middle items-center gap-x-4">
+          <div className="w-full flex flex-col gap-2 justify-center">
+            <h1 className="fade-up-scroll text-5xl align-middle font-bold flex flex-row gap-x-2">
               <div className="flex md:hidden my-auto">
                 <GalleryAnimated />
               </div>
@@ -68,7 +68,7 @@ const Collage = () => {
         </div>
 
         {/* Masonry Gallery */}
-        <section id="Gallery" className="columns-2 md:columns-3 gap-4 my-12">
+        <section className="columns-2 md:columns-3 gap-4 my-12 px-6">
           {mediaItems.length === 0 ? (
             <div className="text-center opacity-70 col-span-full">
               No media found in <code>src/assets/gallery/</code>.
@@ -93,7 +93,7 @@ const Collage = () => {
         </section>
 
         <div className="w-full h-auto m-auto text-center">
-          <h1 className="fade-up-scroll m-auto w-full p-2">More content coming soon!</h1>
+          <h1 className="fade-up-scroll m-auto w-full">More content coming soon!</h1>
         </div>
       </div>
     </div>
