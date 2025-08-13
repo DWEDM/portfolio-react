@@ -188,13 +188,20 @@ const XTerminal = () => {
 
   return (
     <div className="bg-black text-gray-200 p-6 rounded-lg w-full max-w-10xl font-mono shadow-lg">
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-between items-center align-middle mb-4">
         <div className="flex space-x-2">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="w-3 h-3 rounded-full bg-red-500 m-1 p-auto"></div>
+          <div className="w-3 h-3 rounded-full bg-yellow-500 m-1 p-auto"></div>
+          <div className="w-3 h-3 rounded-full bg-green-500 m-1 p-auto"></div>
+          <p className="text-sm text-gray-400 my-auto mx-4">
+            Console - pyodide v0.23.4 
+          </p>
         </div>
-        <p className="text-xs text-gray-400">python-terminal</p>
+        {isLoading && (   
+          <p className="text-xs text-gray-400">
+            Loading Python environment...
+          </p>
+        )}
       </div>
 
       <div 
@@ -202,12 +209,6 @@ const XTerminal = () => {
         className="h-120"
         onClick={() => termRef.current?.focus()}
       />
-      
-      {isLoading && (
-        <div className="text-center text-gray-400 mt-2 text-xs">
-          Loading Python environment...
-        </div>
-      )}
     </div>
   );
 };

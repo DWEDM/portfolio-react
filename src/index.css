@@ -55,33 +55,22 @@ html {
 
 
 .fade-up-scroll {
-  opacity: 0;
-  transform: translateY(0.5rem);
-  transition: opacity 0.4s cubic-bezier(.16,1,.3,1),
-              transform 0.4s cubic-bezier(.16,1,.3,1);
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: opacity 0.4s cubic-bezier(.16,1,.3,1),
+                transform 0.4s cubic-bezier(.16,1,.3,1);
 }
 
 .fade-up-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
-
-
 
 /* Progressive enhancement: if JS fails, don’t leave content invisible */
 .no-js .fade-up-scroll {
-  opacity: 1 !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .fade-up-scroll {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
-  }
 }
 
 /* ================================================ */
