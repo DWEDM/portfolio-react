@@ -49,7 +49,7 @@ const Collage = () => {
     <div className="hero">
       <div className="hero-content flex flex-col text-left">
         {/* Header */}
-        <div className="w-full px-8 flex flex-row align-middle items-center justify-center gap-x-8 gap-y-2">
+        <div className="pt-12 w-full px-8 flex flex-row align-middle items-center justify-center gap-x-8 gap-y-2">
           <div className="hidden md:flex my-auto">
             <GalleryAnimated />
           </div>
