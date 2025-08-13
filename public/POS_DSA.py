@@ -2,6 +2,8 @@ import os
 import sys
 import asyncio
 
+js_input = None
+
 def thankyou():
     print(r"""
                  ████████ ██   ██  █████  ███    ██ ██   ██     ██    ██  ██████  ██    ██
