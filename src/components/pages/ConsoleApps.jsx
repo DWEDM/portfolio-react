@@ -6,7 +6,7 @@ const ConsoleApps = () => {
     <>
       <section id="Console" className="hero flex flex-col h-auto">
         <div className='hero-content w-full flex flex-col h-auto py-4 my-6 mx-auto'>
-            <div className="w-full justify-start">
+            <div className="w-full justify-center text-center">
               <h1 className="text-5xl font-bold my-2 fade-up-scroll">
                   <i class="bi bi-terminal-fill mr-2"></i>
                   Simulated Console

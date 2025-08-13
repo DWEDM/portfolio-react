@@ -24,8 +24,8 @@ const Experience = () => {
     <>
       <section id="Experience" className="hero flex flex-col h-auto ">
         <div className='hero-content flex flex-col w-auto max-w-5xl md:w-full h-auto py-4 my-6 mx-auto'>
-            <h1 className="text-5xl font-bold my-2">
-              This page is currently under construction
+            <h1 className="text-5xl font-bold my-2 text-center">
+              This page is currently under construction...
             </h1>
             <div className="max-w-[89vw] sm:max-w-full sm:w-full m-auto py-4 px-2 h-auto flex flex-col space-y-full">
 <div className="terminal-loader h-[60vh] w-full">
