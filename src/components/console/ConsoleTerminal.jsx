@@ -3,7 +3,7 @@ import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import 'xterm/css/xterm.css';
 
-const XTerminal = () => {
+const ConsoleTerminal = () => {
   const terminalRef = useRef(null);
   const termRef = useRef(null);
   const pyodideRef = useRef(null);
@@ -187,7 +187,7 @@ const XTerminal = () => {
   }, []);
 
   return (
-    <div className="bg-black text-gray-200 p-6 rounded-lg lg:max-w-10xl font-mono shadow-lg">
+    <div className="bg-black text-gray-200 p-6 rounded-lg w-2xl sm:w-full max-w-10xl font-mono shadow-lg">
       <div className="flex justify-between items-center align-middle mb-4">
         <div className="flex space-x-2">
           <div className="w-3 h-3 rounded-full bg-red-500 m-1 p-auto"></div>
@@ -213,4 +213,4 @@ const XTerminal = () => {
   );
 };
 
-export default XTerminal;
+export default ConsoleTerminal;

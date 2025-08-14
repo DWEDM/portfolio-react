@@ -1,5 +1,5 @@
 import React from 'react';
-import XTerminal from '../console/XTerminal';
+import ConsoleTerminal from '../console/ConsoleTerminal';
 
 const ConsoleApps = () => {
   return (
@@ -16,8 +16,17 @@ const ConsoleApps = () => {
                   which I have since recreated in Python.
               </p>
             </div>
-            <div className="w-full m-auto py-4 fade-up-scroll">
-                <XTerminal />
+            <div className="w-full h-full py-4 fade-up-scroll overflow-x-auto">
+                <ConsoleTerminal className="mx-auto"/>
+            </div>
+            <div className="w-full justify-center text-center">
+              <p className="fade-up-scroll max-w-prose mx-auto">
+                This console was created to emulate my early college programming projects.
+                For more details about the original implementation, please refer to my GitHub repository:
+                <a href="https://github.com/denverdelamasa/college-projects" className="hover:underline text-blue-500">
+                  https://github.com/denverdelamasa/college-projects
+                </a>
+              </p>
             </div>
         </div>
       </section>
