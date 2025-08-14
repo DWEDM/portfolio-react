@@ -4,7 +4,7 @@ import XTerminal from '../console/XTerminal';
 const ConsoleApps = () => {
   return (
     <>
-      <section id="Console" className="hero flex flex-col h-auto w-[70vw]">
+      <section id="Console" className="hero flex flex-col h-auto w-[90vw] md:w-[70vw]">
         <div className='hero-content w-full flex flex-col h-auto py-4 my-6 mx-auto'>
             <div className="w-full justify-center text-center">
               <h1 className="text-5xl font-bold my-2 fade-up-scroll mx-auto">
