@@ -37,7 +37,7 @@ const Home = ({ themeName }) => {
                     </a>
                     </div>
                 </div>
-                <div className="bg-base-200 w-auto lg:w-xl h-auto rounded-xl shadow-xl p-4 fade-up-scroll">
+                <div className="w-auto lg:w-xl h-auto p-0 m-auto fade-up-scroll">
                     <BaybayinAnimation />
                 </div>
             </div>
