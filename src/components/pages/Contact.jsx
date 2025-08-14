@@ -8,24 +8,24 @@ const Contact = () => {
         <div className="hero-content h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Coffee art */}
           <div className="fade-up-scroll grid place-items-center w-full h-full">
-            <div class="coffee-container my-auto w-full max-w-[400px] h-[280px] scale-60 sm:scale-75 lg:scale-100 shadow-xl">
-              <div class="coffee-header">
-                <div class="coffee-header__buttons coffee-header__button-one"></div>
-                <div class="coffee-header__buttons coffee-header__button-two"></div>
-                <div class="coffee-header__display"></div>
-                <div class="coffee-header__details"></div>
+            <div className="coffee-container my-auto w-full max-w-[400px] h-[280px] scale-60 sm:scale-75 lg:scale-100 shadow-xl">
+              <div className="coffee-header">
+                <div className="coffee-header__buttons coffee-header__button-one"></div>
+                <div className="coffee-header__buttons coffee-header__button-two"></div>
+                <div className="coffee-header__display"></div>
+                <div className="coffee-header__details"></div>
               </div>
-              <div class="coffee-medium">
-                <div class="coffe-medium__exit"></div>
-                <div class="coffee-medium__arm"></div>
-                <div class="coffee-medium__liquid"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
-                <div class="coffee-medium__cup"></div>
+              <div className="coffee-medium">
+                <div className="coffe-medium__exit"></div>
+                <div className="coffee-medium__arm"></div>
+                <div className="coffee-medium__liquid"></div>
+                <div className="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                <div className="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                <div className="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                <div className="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                <div className="coffee-medium__cup"></div>
               </div>
-              <div class="coffee-footer"></div>
+              <div className="coffee-footer"></div>
             </div>
             <div className="space-y-2 w-auto max-w-[400px] mt-4">
               <span className="text-sm my-auto flex md:flex-row flex-col mx-auto text-start">
@@ -33,7 +33,7 @@ const Contact = () => {
                   Your message will be sent to:
                 </p>
                 <p className="font-semibold text-base-content my-auto text-xs ml-1">
-                <i class="bi bi-send-fill my-auto mx-2 ml-2"></i>
+                <i className="bi bi-send-fill my-auto mx-2 ml-2"></i>
                   denver.delamasa@gmail.com
                 </p>
               </span>
