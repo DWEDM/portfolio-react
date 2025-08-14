@@ -3,8 +3,6 @@ import time
 import os
 import asyncio
 
-js_input = None
-
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
