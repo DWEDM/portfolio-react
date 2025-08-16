@@ -10,35 +10,58 @@ const Home = ({ themeName }) => {
   return (
     <>
         <section id="Home" className="hero mx-auto  min-h-screen flex flex-col gap-y-12">
-            <div className="hero-content flex-col-reverse lg:gap-x-2 lg:flex-row">
-                <div className="w-auto">
-                    <h1 className="text-6xl font-bold fade-up-scroll">Technical, Creative, & Methodical.</h1>
-                    <p className="py-6 fade-up-scroll">
-                        Hi, I’m <strong>Denver Dela Masa</strong>. I do graphic design, art illustrations, 
-                        and front-end development, but I’m mostly into computer hardware support and fixing tech stuff.
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-8">
+                <div className="w-full max-w-[300px] md:max-w-xl mx-auto mb-6 lg:mb-0 order-1 lg:order-2">
+                    <BaybayinAnimation />
+                </div>
+
+                <div className="w-full lg:w-auto order-2 lg:order-1">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold fade-up-scroll">
+                        Technical, Creative, & Methodical.
+                    </h1>
+                    <p className="py-4 md:py-6 fade-up-scroll">
+                        Hi, I'm <strong>Denver Dela Masa</strong>. I do graphic design, art illustrations, 
+                        and front-end development, but I'm mostly into computer hardware support and fixing tech stuff.
                         Always down to learn new things and collaborate with people who love creating cool things too.
                     </p>
-                    <div className="flex flex-wrap gap-x-4 gap-y-2">
-                    <a href="https://github.com/denverdelamasa" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
-                        <i className="bi bi-github"></i>
-                        Github
-                    </a>
-                    <a href="https://instagram.com/wanedanvers" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
-                        <i className="bi bi-instagram"></i>
-                        Instagram
-                    </a>
-                    <a href="https://linkedin.com/in/denverdelamasa" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
-                        <i className="bi bi-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="mailto:denver.delamasa@gmail.com" target="_blank" className="fade-up-scroll badge badge-soft badge-primary hover:cursor-pointer hover:underline hover:scale-105 duration-200">
-                        <i className="bi bi-envelope-at-fill"></i>
-                        Email
-                    </a>
+                    <div className="flex flex-wrap gap-2">
+                        <a 
+                            href="https://github.com/denverdelamasa" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                        >
+                            <i className="bi bi-github mr-1"></i>
+                            Github
+                        </a>
+                        <a 
+                            href="https://instagram.com/wanedanvers" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                        >
+                            <i className="bi bi-instagram mr-1"></i>
+                            Instagram
+                        </a>
+                        <a 
+                            href="https://linkedin.com/in/denverdelamasa" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                        >
+                            <i className="bi bi-linkedin mr-1"></i>
+                            LinkedIn
+                        </a>
+                        <a 
+                            href="mailto:denver.delamasa@gmail.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                        >
+                            <i className="bi bi-envelope-at-fill mr-1"></i>
+                            Email
+                        </a>
                     </div>
-                </div>
-                <div className="w-auto lg:w-xl h-auto p-0 m-auto fade-up-scroll">
-                    <BaybayinAnimation />
                 </div>
             </div>
             <div className="w-[85vw] xl:w-auto">
