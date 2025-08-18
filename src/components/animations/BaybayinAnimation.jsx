@@ -1,25 +1,31 @@
 import React, { useRef, useEffect } from "react";
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const BaybayinAnimation = () => {
     const svgRef = useRef(null);    
 
     useEffect(() => {
         if (svgRef.current) {
-        const bbox = svgRef.current.getBBox();
-        const padding = 5; // Optional padding
-        svgRef.current.setAttribute(
-            "viewBox",
-            `${bbox.x - padding} ${bbox.y - padding} ${
-            bbox.width + 2 * padding
-            } ${bbox.height + 2 * padding}`
-        );
+            const paths = svgRef.current.querySelectorAll('path');
+            paths.forEach(path => {
+                const length = path.getTotalLength();
+                path.style.strokeDasharray = length;
+                path.style.strokeDashoffset = length;
+            });
         }
-    }, []); // Runs once after initial render
+    }, []);
+
   return (
     <StyledWrapper>
         <div className="baybayin-container p-0 md:p-2">
-            <svg className="w-full h-auto" ref={svgRef} fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                    className="baybayin-svg" 
+                    ref={svgRef} 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 500 350"
+                    preserveAspectRatio="xMidYMid meet"
+                >
                 <path id="Vector" d="M236.398 325.156V255.625L212.57 256.406C208.664 256.667 205.279 256.081 202.414 254.648C199.029 253.086 196.62 250.742 195.188 247.617L207.492 241.367C207.622 241.758 207.883 242.018 208.273 242.148C209.055 242.539 210.357 242.734 212.18 242.734L274.094 240.781C277.87 240.651 281.255 241.237 284.25 242.539C287.375 244.102 289.784 246.445 291.477 249.57L279.172 255.82C278.911 255.56 278.651 255.299 278.391 255.039C277.609 254.648 276.372 254.453 274.68 254.453L250.266 255.234V325.156H294.016V338.828H192.648V325.156H236.398Z" fill="#FFCC00"/>
                 <path id="Vector_2" d="M186.43 241.172V308.359C186.43 316.823 183.565 323.984 177.836 329.844C171.846 335.833 164.815 338.828 156.742 338.828H140.727C132.654 338.828 125.622 335.833 119.633 329.844C113.904 323.984 111.039 316.823 111.039 308.359V297.031H103.227V283.359H111.039V275.156H103.227V261.484H111.039V241.172H124.906V261.484H133.305H160.062V275.156H133.305H124.906V283.359H133.305H160.062V297.031H133.305H124.906V308.359H124.711C124.711 312.917 126.339 316.888 129.594 320.273C132.849 323.529 136.56 325.156 140.727 325.156H156.742C161.039 325.156 164.75 323.529 167.875 320.273C171.13 316.888 172.758 312.917 172.758 308.359V241.172H186.43Z" fill="#FFCC00"/>
                 <path id="Vector_3" d="M42.5156 288.242H49.3516H56.1875V307.383C56.5781 314.805 59.7031 319.622 65.5625 321.836C71.5521 324.049 77.5417 325.156 83.5312 325.156V277.305C83.5312 271.185 81.3828 265.846 77.0859 261.289C72.7891 256.992 67.776 254.844 62.0469 254.844H49.3516H36.6562C30.9271 254.844 25.9141 256.992 21.6172 261.289C17.3203 265.846 15.1719 271.185 15.1719 277.305V325.156C21.0312 325.156 26.9557 324.049 32.9453 321.836C38.9349 319.622 42.125 314.805 42.5156 307.383V288.242ZM49.3516 325.547C43.7526 332.578 37.4375 336.549 30.4062 337.461C23.375 338.372 16.0182 338.828 8.33594 338.828C3.77865 338.828 1.5 336.549 1.5 331.992V277.305C1.5 267.409 4.88542 258.945 11.6562 251.914C18.5573 244.753 26.8906 241.172 36.6562 241.172H49.3516H62.0469C71.6823 241.172 80.0156 244.753 87.0469 251.914C93.8177 258.945 97.2031 267.409 97.2031 277.305V331.992C97.2031 336.549 94.9245 338.828 90.3672 338.828C82.6849 338.828 75.3281 338.372 68.2969 337.461C61.2656 336.549 54.9505 332.578 49.3516 325.547Z" fill="#FFCC00"/>
@@ -34,30 +40,69 @@ const BaybayinAnimation = () => {
                 <path id="Vector_12" d="M99.9062 61.3281H113.578V69.1406C113.578 72.7865 114.945 76.3672 117.68 79.8828C120.544 83.3984 123.93 85.1562 127.836 85.1562H140.922C146.13 85.1562 150.036 83.4635 152.641 80.0781C155.375 76.6927 156.742 72.9167 156.742 68.75C156.742 64.5833 155.375 60.8073 152.641 57.4219C150.036 53.9062 146.13 52.1484 140.922 52.1484H136.039H124.711V38.4766H136.039H140.922C149.125 38.4766 153.357 34.5703 153.617 26.7578C154.008 18.8151 149.776 14.8438 140.922 14.8438H131.352C126.664 14.8438 123.409 15.625 121.586 17.1875C119.503 18.8802 118.461 22.3958 118.461 27.7344V31.8359H104.594V27.7344C104.594 18.3594 107.393 11.263 112.992 6.44531C117.289 2.92969 123.409 1.17188 131.352 1.17188H140.922C153.031 1.17188 161.234 6.38021 165.531 16.7969C169.828 27.0833 167.875 36.263 159.672 44.3359C159.672 44.5964 159.542 44.7266 159.281 44.7266C160.583 45.7682 161.495 46.6146 162.016 47.2656C167.875 53.125 170.805 60.2865 170.805 68.75C170.805 77.2135 167.875 84.375 162.016 90.2344C156.026 95.9635 148.995 98.8281 140.922 98.8281H129.789H129.594C121.391 98.8281 114.359 95.9635 108.5 90.2344H108.695C102.836 84.375 99.9062 77.3438 99.9062 69.1406V61.3281Z" fill="#FFCC00"/>
                 <path id="Vector_13" d="M51.5 15.4297L53.4531 19.1406L59.3125 29.6875C60.7448 32.4219 60.5495 34.8958 58.7266 37.1094L53.8438 44.9219L60.0938 57.4219C61.526 60.5469 62.3724 63.2812 62.6328 65.625C62.763 67.9688 62.3073 70.7682 61.2656 74.0234C60.0938 78.1901 58.401 82.2917 56.1875 86.3281C54.3646 89.7135 51.8906 93.4896 48.7656 97.6562L46.8125 100.391L35.6797 92.1875L37.8281 89.4531C40.0417 86.4583 42.125 83.2682 44.0781 79.8828C45.5104 77.0182 46.8776 73.763 48.1797 70.1172C48.7005 68.4245 48.9609 67.2526 48.9609 66.6016C48.9609 66.2109 48.5052 65.1693 47.5938 63.4766L39.7812 47.6563C38.6094 45.3125 38.7396 43.099 40.1719 41.0156L45.25 32.8125L41.3438 25.5859L38.6094 20.7031L48.375 15.4297L17.3203 16.4063C13.4141 16.6667 10.0938 16.0807 7.35938 14.6484C4.10417 13.2161 1.69531 10.8724 0.132812 7.61719L12.2422 1.36719C12.3724 1.62761 12.6979 1.88802 13.2188 2.14844C14 2.53906 15.237 2.73438 16.9297 2.73438L79.0391 0.781252C82.9453 0.651044 86.2656 1.23698 89 2.53906C92.125 4.10156 94.599 6.44531 96.4219 9.57031L84.1172 15.8203C84.1172 15.8203 83.8568 15.5599 83.3359 15.0391C82.2943 14.6484 80.9922 14.4531 79.4297 14.4531L51.5 15.4297Z" fill="#FFCC00"/>
             </svg>
-        </div>
-    </StyledWrapper>
-  );
+            </div>
+        </StyledWrapper>
+    );
 }
 
+const drawAnimation = keyframes`
+    to { stroke-dashoffset: 0; }
+`;
+
+const fillAnimation = keyframes`
+    to { fill: #FFCC00; }
+`;
+
 const StyledWrapper = styled.div`
-    .baybayin-container svg path {
-        stroke: #ffcc00;           /* Stroke color */
-        fill: transparent;         /* No fill for drawing effect */
-        stroke-width: 5;           /* Adjust thickness */
+    .baybayin-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .baybayin-svg {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        filter: drop-shadow(0 0 4px rgba(255, 204, 0, 0.7));
+    }
+
+    path {
+        stroke: #ffcc00;
+        fill: transparent;
+        stroke-width: 5;
         stroke-linecap: round;
         stroke-linejoin: round;
-
-        stroke-dasharray: 1000;    /* Large enough to cover path length */
-        stroke-dashoffset: 1000;   /* Hidden initially */
-        animation: draw 10s ease-in-out;
+        animation: 
+            ${drawAnimation} 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards, 
+            ${fillAnimation} 0.6s cubic-bezier(0.33, 1, 0.68, 1) 1.1s forwards;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
+    path:nth-child(1) { animation-delay: 0.0s, 1.1s; }
+    path:nth-child(2) { animation-delay: 0.1s, 1.2s; opacity: 1; }
+    path:nth-child(3) { animation-delay: 0.2s, 1.3s; opacity: 1; }
+    path:nth-child(4) { animation-delay: 0.3s, 1.4s; opacity: 1; }
+    path:nth-child(5) { animation-delay: 0.4s, 1.5s; opacity: 1; }
+    path:nth-child(6) { animation-delay: 0.5s, 1.6s; opacity: 1; }
+    path:nth-child(7) { animation-delay: 0.6s, 1.7s; opacity: 1; }
+    path:nth-child(8) { animation-delay: 0.7s, 1.8s; opacity: 1; }
+    path:nth-child(9) { animation-delay: 0.8s, 1.9s; opacity: 1; }
+    path:nth-child(10) { animation-delay: 0.9s, 2.0s; opacity: 1; }
+    path:nth-child(11) { animation-delay: 1.0s, 2.1s; opacity: 1; }
+    path:nth-child(12) { animation-delay: 1.1s, 2.2s; opacity: 1; }
+    path:nth-child(13) { animation-delay: 1.2s, 2.3s; opacity: 1; }
+    path:nth-child(14) { animation-delay: 1.3s, 2.4s; opacity: 1; }
 
-    .baybayin-container svg path {
-        animation-delay: 0.3s;
-    }
-    @keyframes draw {
-        to {
-            stroke-dashoffset: 0;
+    @media (prefers-reduced-motion) {
+        path {
+            animation: none !important;
+            stroke-dashoffset: 0 !important;
+            fill: #FFCC00 !important;
+            opacity: 1 !important;
         }
     }
 `;

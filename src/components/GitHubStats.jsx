@@ -160,7 +160,7 @@ export default function GitHubStats({ themeName = "spicy" }) {
   };
 
   return (
-    <div className="w-full text-content mb-16 md:mb-24 px-2">
+    <div className="text-content px-2 mx-auto">
       <header className="flex justify-between items-center mb-4 md:mb-6 gap-4 flex-wrap">
         <div>
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-content">
@@ -172,7 +172,7 @@ export default function GitHubStats({ themeName = "spicy" }) {
         </div>
       </header>
       
-      <div className="p-2 md:p-6 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="w-[85vw] lg:w-fit xl-w-auto p-2 md:p-6 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div 
           ref={gridRef}
           className="relative overflow-auto" 
