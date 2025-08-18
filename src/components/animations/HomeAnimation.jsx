@@ -51,6 +51,9 @@ const StyledWrapper = styled.div`
     100% {
       stroke-dashoffset: 5;
     }
+    0% {
+      stroke-dashoffset: 365;
+    }
   }
 `;
 

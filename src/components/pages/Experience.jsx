@@ -23,11 +23,11 @@ const Experience = () => {
   return (
     <>
       <section id="Experience" className="hero flex flex-col h-auto ">
-        <div className='hero-content flex flex-col w-auto max-w-5xl md:w-full h-auto py-4 my-6 mx-auto '>
-            <h1 className="text-5xl font-bold my-2">
-              This page is currently under construction
+        <div className='hero-content flex flex-col w-auto max-w-5xl md:w-full h-auto py-4 my-6 mx-auto'>
+            <h1 className="text-5xl font-bold my-2 text-center">
+              This page is currently under construction...
             </h1>
-            <div className="bg-base-200 max-w-[89vw] sm:max-w-full sm:w-full m-auto py-4 px-2 h-auto rounded-xl shadow-xl flex flex-col space-y-full transition-all duration-200 ease-in-out">
+            <div className="max-w-[89vw] sm:max-w-full sm:w-full m-auto py-4 px-2 h-auto flex flex-col space-y-full">
 <div className="terminal-loader h-[60vh] w-full">
 <div className="terminal-header">
   <div className="terminal-title">Status</div>
@@ -49,9 +49,6 @@ const Experience = () => {
   <p className="type-line delay-7">{`</div>`}</p>
 </div>
 </div>
-                <div className="text-xs text-content m-4">
-                    Made by jeremyssocial - <a href="https://www.uiverse.io" target="_blank" className="underline">uiverse.io</a> | Modified by me
-                </div>
             </div>
         </div>
       </section>
