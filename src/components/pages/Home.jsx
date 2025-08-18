@@ -17,14 +17,16 @@ const Home = ({ themeName }) => {
                     </div>
 
                     <div className="w-full lg:max-w-3xl order-2 lg:order-1">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold fade-up-scroll">
-                            Technical, Creative, & Methodical.
+                        <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold fade-up-scroll">
+                            Illustrator. <br></br>
+                            Front-End Dev. <br></br>
+                            Tech Support.
                         </h1>
-                        <p className="py-4 md:py-6 fade-up-scroll">
-                            Hi, my name is <strong>Denver Dela Masa</strong>. I do graphic design, art illustrations, 
-                            and front-end web development, but most of my skillpoints are related computer hardware support 
-                            and fixing tech stuff. Always up to learn new things and collaborate with other people who share 
-                            the same passion I have aswell...!!!
+                        <p className="py-4 md:py-6 fade-up-scroll text-sm">
+                            Hi, my name is <strong>Denver Dela Masa</strong>. I specialize in graphic design, art 
+                            illustration, and front-end web development, with a strong foundation in computer hardware 
+                            support and technical troubleshooting. I’m always eager to learn new skills and collaborate 
+                            with people who share the same passion for creativity and technology.
                         </p>
                         <div className="flex flex-wrap gap-2">
                             <a 
@@ -68,7 +70,7 @@ const Home = ({ themeName }) => {
                 </div>
             <div className="divider"></div>
                 <div id="" className="hero-content h-auto w-full justify-start">
-                    <div className='fade-up-scroll'>
+                    <div className='fade-up-scroll mx-auto'>
                         <h1 className="text-4xl font-bold mb-2">What I’ve Worked On:</h1>
                         <p className="text-base-content mb-7 text-md">
                             A showcase of the projects and experiences that shaped me...
@@ -84,7 +86,7 @@ const Home = ({ themeName }) => {
                 </div>
             <div className="divider"></div>
                 <div id="" className="hero-content h-auto w-full justify-start">
-                    <div className='fade-up-scroll'>
+                    <div className='fade-up-scroll mx-auto'>
                         <h1 className="text-4xl font-bold mb-2">What I'm currently up to:</h1>
                         <p className="text-base-content mb-7 text-md">
                             Things I am currently working on to improve my current knowledge...
