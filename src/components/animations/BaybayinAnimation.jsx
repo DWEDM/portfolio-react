@@ -50,7 +50,7 @@ const drawAnimation = keyframes`
 `;
 
 const fillAnimation = keyframes`
-    to { fill: #FFCC00; }
+    to { fill: currentColor; }
 `;
 
 const StyledWrapper = styled.div`
@@ -67,13 +67,14 @@ const StyledWrapper = styled.div`
         height: auto;
         max-width: 100%;
         max-height: 100%;
-        filter: drop-shadow(0 0 4px rgba(255, 204, 0, 0.7));
+        filter: drop-shadow(0 0 4px currentColor);
+        color: var(--bc); /* Use DaisyUI's text-content color variable */
     }
 
     path {
-        stroke: #ffcc00;
+        stroke: currentColor;
         fill: transparent;
-        stroke-width: 5;
+        stroke-width: 3;
         stroke-linecap: round;
         stroke-linejoin: round;
         animation: 
@@ -101,7 +102,7 @@ const StyledWrapper = styled.div`
         path {
             animation: none !important;
             stroke-dashoffset: 0 !important;
-            fill: #FFCC00 !important;
+            fill: currentColor !important;
             opacity: 1 !important;
         }
     }
