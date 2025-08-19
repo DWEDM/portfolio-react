@@ -99,7 +99,7 @@ const Home = ({ themeName }) => {
                 </div>
             <div className="divider"></div>
                 <div 
-                    className="relative w-full mb-32 rounded-lg overflow-hidden min-h-[500px] flex items-center justify-center"
+                    className="fade-up-scroll relative w-full mb-32 rounded-lg overflow-hidden min-h-[500px] flex items-center justify-center"
                     style={{
                         backgroundImage: `url(${StarryNight})`,
                         backgroundSize: 'cover',
