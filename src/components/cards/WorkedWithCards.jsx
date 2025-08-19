@@ -6,7 +6,7 @@ import Capstone_Project from '../../assets/gallery/capscr1.webp'
 const ProjectCards = () => {
     return(
         <>
-            <div className="fade-up-scroll card bg-base-300 w-full md:w-md lg:w-lg shadow-xl">
+            <div className="fade-up-scroll card bg-base-300 w-full md:w-md lg:w-lg max-w-lg shadow-xl">
                 <figure className="p-2">
                     <img src={DENR_PENRO} alt="DENR PENRO" className="rounded-xl"/>
                 </figure>
@@ -25,7 +25,7 @@ const ProjectCards = () => {
                 </div>
                 </div>
             </div>
-            <div className="fade-up-scroll card bg-base-300 w-full md:w-md lg:w-xl shadow-xl">
+            <div className="fade-up-scroll card bg-base-300 w-full md:w-md lg:w-xl max-w-lg shadow-xl">
                 <figure className="p-2">
                 <img src={Capstone_Project} alt="DENR PENRO" className="rounded-xl"/>
                 </figure>

@@ -6,6 +6,7 @@ import HomeAnimation from '../animations/HomeAnimation';
 import BaybayinAnimation from '../animations/BaybayinAnimation';
 import GitHubStats from '../GitHubStats';
 import MyQuote from '../cards/MyQuote';
+import StarryNight from '../../assets/StarryNight.jpg';
 
 const Home = ({ themeName }) => {
   return (
@@ -97,8 +98,27 @@ const Home = ({ themeName }) => {
                     </div>
                 </div>
             <div className="divider"></div>
-                <div id="" className="hero-content h-auto w-full justify-start mb-32">
-                    <div className='fade-up-scroll mx-auto'>
+                <div 
+                    className="relative w-full mb-32 rounded-lg overflow-hidden min-h-[500px] flex items-center justify-center"
+                    style={{
+                        backgroundImage: `url(${StarryNight})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                    >
+                    <div 
+                        style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(30, 27, 75, 0.4)' // indigo-900 with 40% opacity
+                        }}
+                    ></div>
+                    
+                    <div className='fade-up-scroll mx-auto relative z-10 p-8 text-center text-white'>
                         <MyQuote/>
                     </div>
                 </div>
