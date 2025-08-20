@@ -1,5 +1,6 @@
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
+import ConsoleNavBtn from './animations/ConsoleNavBtn';
 
 import { Link } from 'react-router-dom';
 
@@ -58,12 +59,6 @@ const Navbar = ({ theme, setTheme }) => {
                 My Gallery
               </Link>
             </li>
-            <li>
-              <Link to="/console-app">
-                <i className="bi bi-terminal-fill"></i>
-                Console Appications
-              </Link>
-            </li>
           </ul>
         </div>
 <div className="flex items-center justify-center h-screen">
@@ -112,17 +107,12 @@ const Navbar = ({ theme, setTheme }) => {
               My Gallery
             </Link>
           </li>
-            <li>
-              <Link to="/console-app">
-                <i className="bi bi-terminal-fill"></i>
-                Console Appications
-              </Link>
-            </li>
         </ul>
       </div>
 
       {/* Theme toggle */}
-      <div className="navbar-end px-2">
+      <div className="navbar-end px-2 gap-x-2">
+        <ConsoleNavBtn />
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
     </div>

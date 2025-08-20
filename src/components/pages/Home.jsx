@@ -12,7 +12,7 @@ const Home = ({ themeName }) => {
     <>
         <section id="Home" className="hero mx-auto  min-h-screen flex flex-col gap-y-12">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-8 mt-12">
-                    <div className="w-full max-w-[300px] md:max-w-xl mx-auto mb-6 lg:mb-0 order-1 lg:order-2">
+                    <div className="w-full max-w-[600px] md:max-w-xl mx-auto mb-6 lg:mb-0 order-1 lg:order-2">
                         <BaybayinAnimation />
                     </div>
 
