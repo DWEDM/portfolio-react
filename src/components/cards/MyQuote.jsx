@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import StarryNight from '../../assets/StarryNight.jpg';
+import StarryNight from '../../assets/starrynight.gif';
 
 const MyQuote = () => {
   const [isVisible, setIsVisible] = useState(false);

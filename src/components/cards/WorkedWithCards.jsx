@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import DENR_PENRO from '../../assets/gallery/DENR-PENRO.webp';
 import Capstone_Project from '../../assets/gallery/capscr1.webp'
@@ -30,18 +31,18 @@ const ProjectCards = () => {
                 <img src={Capstone_Project} alt="DENR PENRO" className="rounded-xl"/>
                 </figure>
                 <div className="card-body items-left text-left">
-                <h2 className="card-title">The Development of Paws'N Claws Community Hub</h2>
-                <p className="text-sm mb-2 p-0">Oct 2024 - April 2025</p>
-                <p>
-                    My College thesis whom I've worked with four other people. My role mostly revolved around 
-                    Front-End design and development, and technical writing.
-                </p>
-                <div className="justify-center card-actions">
-                    <button className="btn btn-primary w-full">
-                    <i className="bi bi-box-arrow-in-up-right"></i>
-                    Learn more
-                    </button>
-                </div>
+                    <h2 className="card-title">The Development of Paws'N Claws Community Hub</h2>
+                    <p className="text-sm mb-2 p-0">Oct 2024 - April 2025</p>
+                    <p>
+                        My College thesis whom I've worked with four other people. My role mostly revolved around 
+                        Front-End design and development, and technical writing.
+                    </p>
+                    <div className="justify-center card-actions">
+                        <Link className="btn btn-primary w-full" to="/experience#PawsNClaws">
+                            <i className="bi bi-box-arrow-in-up-right"></i>
+                            Learn more
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>
