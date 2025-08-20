@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import ProfileCard from '../cards/ProfileCard';
 import AboutHero from '../cards/AboutHero';
 
+import sampleart from '../../assets/gallery/art/9.webp';
+
 import AboutProgramList from '../cards/AboutProgramList';
 
 const About = ({ setActivePage }) => {
@@ -11,8 +13,8 @@ const About = ({ setActivePage }) => {
     <>
     <section id="About" className="hero h-auto  pt-12">
       <div className="hero-content text-left flex flex-col items-start">
-        <div className="flex flex-col lg:flex-row gap-x-8"> 
-          <div className="flex flex-col gap-y-2 order-2 lg:order-1">
+        <div className="flex flex-col lg:flex-row gap-x-2"> 
+          <div className="flex flex-col pr-0 lg:pr-16 gap-y-2 order-2 lg:order-1">
             <AboutHero />
             <div className="my-2">
               <h1 className="text-3xl font-bold fade-up-scroll">About Me</h1>
@@ -39,14 +41,25 @@ const About = ({ setActivePage }) => {
             <div className="divider-default"></div>
             <div className="flex flex-col max-w-full">
                 <div className="my-4">
-                  <h1 className="text-3xl font-bold mt-12 mb-2 fade-up-scroll">What keeps me busy beyond coding?</h1>
+                  <h1 className="text-3xl font-bold mt-12 mb-4 fade-up-scroll">What keeps me busy beyond coding?</h1>
                   <p className="mb-5 font-paragraph fade-up-scroll">
+                      When I'm not coding, I do a mix of creative and community activities. 
+                      I spend some of my free time doing digital art, mainly character illustrations mainly 
+                      for fun and to study a little bit of Art theory. I can also say that music plays a big part of my life,
+                      I play a little bit of guitar, and bass. But my main instrument is Drums. I am a member of our church's PAW team,
+                      and yes, I am a drummer.  
                   </p>
-                  <div className="my-12 flex-wrap flex text-accent">
-                    <img src={null} alt={null} /> {/* bruh I'm thinking this through... */}
-                    <p className="m-auto p-2 text-xs"></p>
+                  <div className="my-12 flex-wrap flex text-content">
+                    <img src={sampleart} alt="sample art from my insta" className='w-full h-auto max-h-[400px] object-cover' />
+                    <p className="text-xs text-accent"></p>
                   </div>
+                  <p className="mb-5 font-paragraph fade-up-scroll">
+                    I also enjoy playing video games, mainly League of Legends, but I found myself enjoying a 
+                    little bit of indie games like stardew valley, and blasphemous, games that have a really challenging mechanics, 
+                    and also a good story/lore.
+                  </p>
                 </div>
+
                 <div className="my-4">
                   <h2 className="text-4xl font-bold mt-12 mb-4 fade-up-scroll">
                     My Soft Skills
