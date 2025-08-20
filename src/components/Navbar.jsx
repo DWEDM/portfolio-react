@@ -1,5 +1,6 @@
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
+import ConsoleNavBtn from './animations/ConsoleNavBtn';
 
 import { Link } from 'react-router-dom';
 
@@ -22,8 +23,8 @@ const Navbar = ({ theme, setTheme }) => {
             className="menu menu-lg dropdown-content bg-base-100 rounded-box gap-y-2 z-1 mt-3 w-xs max-w-md p-2 shadow border-neutral"
           >
             <li className="pb-6 border-b-1 border-neutral">
-              <Link to="/" className="btn md:hidden inline-block relative p-px font-semibold leading-6 bg-base-300 shadow-2xl cursor-pointer rounded-xl shadow-base-300 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
-                <span className="absolute inset-0 rounded-xl bg-[#FFCC00] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+              <Link to="/" className="btn md:hidden inline-block relative p-px font-semibold leading-6 text-content bg-base-300 shadow-2xl cursor-pointer rounded-xl shadow-base-300 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+                <span className="absolute inset-0 rounded-xl bg-base-content opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
                 <span className="relative z-10 block px-6 py-3 rounded-xl bg-base-300">
                   <div className="relative z-10 flex items-center space-x-2">
                     <span className="transition-all duration-500 group-hover:translate-x-1 text-base-content">wyane.dev</span>
@@ -58,19 +59,13 @@ const Navbar = ({ theme, setTheme }) => {
                 My Gallery
               </Link>
             </li>
-            <li>
-              <Link to="/console-app">
-                <i className="bi bi-terminal-fill"></i>
-                Console Appications
-              </Link>
-            </li>
           </ul>
         </div>
 <div className="flex items-center justify-center h-screen">
   <div className="relative group">
     <Link to="/" >
-      <button className="btn hidden md:inline-block relative p-px font-semibold leading-6 bg-base-300 shadow-2xl cursor-pointer rounded-xl shadow-base-300 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
-        <span className="absolute inset-0 rounded-xl bg-[#FFCC00] p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+      <button className="btn hidden md:inline-block relative p-px font-semibold leading-6 text-content bg-base-300 shadow-2xl cursor-pointer rounded-xl shadow-base-300 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+        <span className="absolute inset-0 rounded-xl bg-base-content p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
         <span className="relative z-10 block px-6 py-1.5 rounded-xl bg-base-300">
           <div className="relative z-10 flex items-center space-x-2">
             <span className="transition-all duration-500 group-hover:translate-x-1 text-base-content">wyane.dev</span>
@@ -112,17 +107,12 @@ const Navbar = ({ theme, setTheme }) => {
               My Gallery
             </Link>
           </li>
-            <li>
-              <Link to="/console-app">
-                <i className="bi bi-terminal-fill"></i>
-                Console Appications
-              </Link>
-            </li>
         </ul>
       </div>
 
       {/* Theme toggle */}
-      <div className="navbar-end px-2">
+      <div className="navbar-end px-2 gap-x-2">
+        <ConsoleNavBtn />
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
     </div>
