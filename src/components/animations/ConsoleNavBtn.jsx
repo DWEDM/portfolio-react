@@ -7,7 +7,7 @@ const ConsoleNavBtn = ({ theme, setTheme }) => {
   return (
     <StyledWrapper>
       <Link className="Btn scale-90 bg-base-300 shadow-lg" to="/console-app">
-        <i className="sign bi bi-terminal-fill"></i>
+        <i className="sign bi bi-terminal"></i>
         <div className="text text-base-content">Pyoide Console</div>
       </Link>
     </StyledWrapper>
