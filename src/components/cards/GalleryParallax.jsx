@@ -39,7 +39,7 @@ const GalleryParallax = () => {
           </blockquote>
           
           <figcaption className="flex flex-col items-center">
-            <p className="fade-up-scroll max-w-prose mt-0">
+            <p className="fade-up-scroll max-w-prose mt-0 text-xs md:text-sm">
               Here's a collection of photos that capture my work, hobbies, 
               and passions. No particular order, just moments that represent what I enjoy.
             </p>

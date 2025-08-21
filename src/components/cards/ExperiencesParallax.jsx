@@ -35,8 +35,8 @@ const ExperiencesParallax = () => {
           </blockquote>
           
           <figcaption className="flex flex-col items-center">
-            <p className="fade-up-scroll max-w-prose mt-0">
-              Here are some of my experiences in the field of web development and hardware support.
+            <p className="fade-up-scroll max-w-prose mt-0 text-xs md:text-sm">
+              Here are some of my experiences, currently in the field of web development and hardware support.
             </p>
           </figcaption>
         </figure>
