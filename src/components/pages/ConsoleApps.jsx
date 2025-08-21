@@ -22,7 +22,7 @@ const ConsoleApps = () => {
             <div className="w-full justify-center text-center">
               <p className="fade-up-scroll max-w-prose mx-auto">
                 This console was created to emulate my early college programming projects.
-                For more details about the original implementation, please refer to my GitHub repository:
+                For more details about the original implementation, please refer to my GitHub repository: <br/>
                 <a href="https://github.com/denverdelamasa/college-projects" className="ml-2 hover:underline text-blue-500">
                   https://github.com/denverdelamasa/college-projects
                 </a>

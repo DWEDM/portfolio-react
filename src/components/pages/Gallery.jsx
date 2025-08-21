@@ -47,10 +47,9 @@ const Collage = () => {
   const mediaItems = useMemo(() => shuffle(importedMedia), []);
 
   return (
-    <div className="hero">
+    <section className="hero flex flex-col">
+      <GalleryParallax />
       <div className="hero-content flex flex-col text-left">
-        <GalleryParallax />
-
         {/* Masonry Gallery */}
         <section className="columns-2 md:columns-3 gap-4 my-12 px-6">
           {mediaItems.length === 0 ? (
@@ -80,7 +79,7 @@ const Collage = () => {
           <h1 className="fade-up-scroll m-auto w-full">More content coming soon!</h1>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

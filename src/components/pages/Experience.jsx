@@ -25,9 +25,9 @@ const Experience = () => {
 
   return (
     <>
-      <section id="Experience" className="hero-content flex flex-col m-0 transition-all duration-300">
+      <section id="Experience" className="hero flex flex-col m-0 transition-all duration-300">
         <ExperiencesParallax/>
-        <div className="container px-0 sm:px-4 md:px-18 lg:px-36">
+        <div className="px-0 sm:px-4 md:px-18 lg:px-34">
           <PawsNClaws />
             <div className="divider"></div>
           <DENRInternship />

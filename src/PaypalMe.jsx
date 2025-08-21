@@ -52,7 +52,7 @@ const PaypalMeButton = ({ theme, onClick, icon }) => {
         aria-label="Buy me a coffee"
       >
         {/* Coffee icon */}
-        <i class="bi bi-cup-hot"></i>
+        <i className="bi bi-cup-hot"></i>
       </button>
     </div>
   );

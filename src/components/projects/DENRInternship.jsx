@@ -5,8 +5,8 @@ import img2 from '../../assets/gallery/ramdebug.webp';
 const PawsNClaws = () => {
   return (
     <>
-      <section id="DENRInternship" className="hero h-auto">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <section id="DENRInternship" className="hero-content h-auto">
+        <div className="flex-col lg:flex-row-reverse">
           <div className="max-w-full m-4">
             <h1 className="text-4xl font-bold my-2">Internship | Management Service Division - IT department</h1>
             <p className="mb-5 font-paragraph">

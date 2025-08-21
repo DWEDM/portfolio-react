@@ -31,9 +31,9 @@ const ExperiencesParallax = () => {
       {/* Content */}
       <div className={`relative z-10 p-8 text-center text-white transition-all duration-700 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <figure className="max-w-3xl mx-auto">
-            <div className="flex flex-row gap-x-4 my-auto justify-center items-center">
+            <div className="flex flex-row gap-x-4 my-auto text-left justify-center items-center">
               <ExperiencesAnimated />
-              <h1 className="text-4xl md:text-6xl font-bold fade-up-scroll">My Experiences</h1>
+              <h1 className="text-3xl md:text-6xl font-bold fade-up-scroll">Relevant Experiences</h1>
             </div>
           
           <figcaption className="flex flex-col items-center">

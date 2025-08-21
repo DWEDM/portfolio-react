@@ -44,7 +44,7 @@ const ProfileCard = () => {
               </li>
               <li>
                 <a href="https://uiverse.io/profile/denverdelamasa"target="_blank" rel="noopener noreferrer" className="link link-hover flex gap-x-2">
-                  <i class="bi bi-link-45deg"></i>
+                  <i className="bi bi-link-45deg"></i>
                   uiverse.io/profile/denverdelamasa
                 </a>
               </li>

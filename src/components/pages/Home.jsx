@@ -62,7 +62,7 @@ const Home = ({ themeName }) => {
                                 rel="noopener noreferrer"
                                 className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                             >
-                                <i class="bi bi-link-45deg"></i>
+                                <i className="bi bi-link-45deg"></i>
                                 uiverse
                             </a>
                             <a 
@@ -71,7 +71,7 @@ const Home = ({ themeName }) => {
                                 rel="noopener noreferrer"
                                 className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                             >
-                                <i class="bi bi-dribbble"></i>
+                                <i className="bi bi-dribbble"></i>
                                 Dribble
                             </a>
                             <a 
@@ -80,7 +80,7 @@ const Home = ({ themeName }) => {
                                 rel="noopener noreferrer"
                                 className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                             >
-                                <i class="bi bi-link-45deg"></i>
+                                <i className="bi bi-link-45deg"></i>
                                 Leetcode
                             </a>
                             <a 
@@ -98,7 +98,7 @@ const Home = ({ themeName }) => {
                                 rel="noopener noreferrer"
                                 className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                             >
-                                <i class="bi bi-link-45deg"></i>
+                                <i className="bi bi-link-45deg"></i>
                                 Duolingo
                             </a>
                         </div>
