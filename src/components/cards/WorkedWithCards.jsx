@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import DENR_PENRO from '../../assets/gallery/DENR-PENRO.webp';
 import Capstone_Project from '../../assets/gallery/capscr1.webp'

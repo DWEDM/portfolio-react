@@ -6,10 +6,10 @@ import img2 from '../../assets/gallery/capscr2.webp';
 const PawsNClaws = () => {
   return (
     <>
-      <div id="PawsNClaws" className="hero h-auto">
+      <section id="PawsNClaws" className="hero h-auto">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="max-w-full m-4">
-            <h1 className="text-3xl font-bold my-2">Capstone Project - Paws'N Claws</h1>
+            <h1 className="text-4xl font-bold my-2">Capstone Project - Paws'N Claws</h1>
             <p className="mb-5 font-paragraph">
                During my college thesis project, I've worked with a website called "Paws'N Claws" 
                along with my four colleagues. My role mostly revolved on front-end design, development and UI functionality, 
@@ -20,8 +20,8 @@ const PawsNClaws = () => {
                 <img src={img1} alt="image 1" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
                 <img src={img2} alt="image 2" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
               </figure>
-              <div className="text-xs mb-8 mt-1 items-center text-center">
-                <p>Some screenshots of the site I worked with</p>
+              <div className="text-xs mb-8 mt-1 items-center text-center text-accent">
+                <p>Some screenshots of the site's HomePage</p>
               </div>
             </div>
             <p className="mb-5 font-paragraph">
@@ -34,7 +34,7 @@ const PawsNClaws = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

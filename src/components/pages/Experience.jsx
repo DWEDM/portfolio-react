@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import PawsNClaws from '../projects/PawsNClaws';
 import DENRInternship from '../projects/DENRInternship';
 
+import ExperiencesParallax from '../cards/ExperiencesParallax';
+
 const Experience = () => {
   useEffect(() => {
     const lines = document.querySelectorAll('.type-line');
@@ -23,18 +25,17 @@ const Experience = () => {
 
   return (
     <>
-      <section id="Experience" className="hero-content flex flex-col m-0 md:m-4 transition-all duration-300">
-        <div className="hero-content h-[40vh] w-full justify-center items-center text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold">My Experiences</h1>
-        
+      <section id="Experience" className="hero-content flex flex-col m-0 transition-all duration-300">
+        <ExperiencesParallax/>
+        <div className="container px-0 sm:px-4 md:px-18 lg:px-36">
+          <PawsNClaws />
+            <div className="divider"></div>
+          <DENRInternship />
+            <div className="divider"></div>
         </div>
-        <PawsNClaws />
-          <div className="divider"></div>
-        <DENRInternship />
-          <div className="divider"></div>
       </section>
     </>
-  );
+  ); 
 };
 
 export default Experience;
