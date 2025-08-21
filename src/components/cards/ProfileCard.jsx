@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../assets/gradpic.jpg'; 
+import profileImg from '../../assets/gradpic.webp'; 
 
 const ProfileCard = () => {
   return (

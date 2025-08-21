@@ -3,7 +3,12 @@ import React from "react";
 const GalleryAnimated = () => {
   return (
     <>
-      <style jsx>{`
+      <div className="GalleryAnimated md:scale-130 scale-100 fade-up-scroll shadow-lg">
+        <div className="gallery-before" />
+        <div className="gallery-after" />
+      </div>
+      
+      <style>{`
         .GalleryAnimated {
           width: 64px;
           height: 64px;
@@ -68,11 +73,6 @@ const GalleryAnimated = () => {
           }
         }
       `}</style>
-
-      <div className="GalleryAnimated md:scale-130 scale-100 fade-up-scroll shadow-lg">
-        <div className="gallery-before" />
-        <div className="gallery-after" />
-      </div>
     </>
   );
 };

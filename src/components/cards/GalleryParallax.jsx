@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Background from '../../assets/parallaxBG/GalleryParallaxBG.jpg';
+import Background from '../../assets/parallaxBG/GalleryParallaxBG.webp';
 
 import GalleryAnimated from '../animations/GalleryAnimation';
 
