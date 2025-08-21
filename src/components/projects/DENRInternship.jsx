@@ -10,35 +10,36 @@ const PawsNClaws = () => {
           <div className="max-w-full m-4">
             <h1 className="text-4xl font-bold my-2">Internship | Management Service Division - IT department</h1>
             <p className="mb-5 font-paragraph">
-              During my On-the-Job Training (OJT), I was assigned to the Department of Environment and Natural 
-              Resources – Provincial Environment and Natural Resources Office Bulacan (DENR-PENRO) as an IT intern. 
-              My role was quite all-around, handling both office support and technical tasks.
+              During my On-the-Job Training (OJT), I was assigned as an IT intern at the Department 
+              of Environment and Natural Resources – Provincial Environment and Natural Resources Office (DENR-PENRO) 
+              Bulacan. My role was fairly dynamic, assisting with both technical and administrative IT tasks.
             </p>
             <p className="mb-5 font-paragraph">
-              Most of my responsibilities involved PMS documentation and computer maintenance, covering both hardware 
-              and software. I handled routine PC cleaning (thankfully with a blower that made things easier), troubleshooting, 
-              and resolving technical issues across the office. The most common problems I worked on were printer malfunctions, 
-              power supply and RAM issues, and software-related concerns that sometimes required a full system reformat.
+              I was responsible for PMS documentation, computer maintenance (both software and hardware), and troubleshooting 
+              technical issues across the office. Using tools like an air blower, I regularly cleaned and maintained PCs to 
+              keep them running smoothly. I handled a wide range of IT concerns, from printer malfunctions and software problems 
+              (including full system reformatting) to hardware-related issues such as faulty power supplies and, in one case, 
+              a defective RAM module.
             </p>
             <div className="max-w-full">
               <figure className="px-5 flex flex-col gap-2">
-                <img src={img1} alt="image 1" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
-                <img src={img2} alt="image 2" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
+                <img src={img1} alt="image 1" className="rounded-xl shadow-xl w-full max-h-[250px] transition-all hover:max-h-[1000px] object-cover" />
+                <img src={img2} alt="image 2" className="rounded-xl shadow-xl w-full max-h-[250px] transition-all hover:max-h-[1000px] object-cover" />
               </figure>
               <div className="text-xs mb-8 mt-1 items-center text-center text-accent">
                 <p>Some pictures of the things I fixed/Maintained</p>
               </div>
             </div>
             <p className="mb-5 font-paragraph">
-              One of the biggest challenges came when my immediate supervisor—the sole IT personnel—had to transfer to another 
-              branch for medical reasons. For about a month, I was the only IT intern managing the entire office’s tech needs, 
-              until another intern from a different department was reassigned to help. This experience pushed me to become more 
-              resourceful and confident in my technical abilities, especially in diagnosing and repairing hardware problems.
+              A notable part of my internship was stepping up when the office’s sole IT personnel had to transfer to another 
+              branch for medical reasons. This left me as the primary IT support for the entire office for about a month, until 
+              another intern was reassigned to assist. Managing the workload independently pushed me to become resourceful, 
+              confident, and more technically adept.
             </p>
             <p className="mb-5 font-paragraph">
-              Overall, my internship gave me hands-on experience in maintaining IT infrastructure and solving real-world 
-              technical issues under pressure. It significantly improved my troubleshooting skills and strengthened my 
-              confidence in handling IT-related responsibilities independently.
+              By the end of my internship, I not only strengthened my technical skills but also gained valuable experience 
+              in handling responsibilities under pressure. Before leaving, I also helped onboard and guide incoming interns 
+              who would continue the IT support tasks.
             </p>
           </div>
         </div>

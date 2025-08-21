@@ -16,6 +16,8 @@ import ConsoleApps from './components/pages/ConsoleApps';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import PaypalMeButton from './PaypalMe';
+
 function App() {
   // THEME STATE LIFTED HERE
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "nord");
@@ -81,6 +83,9 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <PaypalMeButton 
+        theme={theme}
+      />
     </div>
     </>
   );
