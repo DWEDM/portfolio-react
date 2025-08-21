@@ -23,10 +23,15 @@ const Experience = () => {
 
   return (
     <>
-      <section id="Experience" className="hero-content flex flex-col m-0 md:m-4 max-w-2xl">
-        <h1 className="text-4xl md:text-6xl font-bold">My Experiences</h1>
+      <section id="Experience" className="hero-content flex flex-col m-0 md:m-4 transition-all duration-300">
+        <div className="hero-content h-[40vh] w-full justify-center items-center text-center mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold">My Experiences</h1>
+        
+        </div>
         <PawsNClaws />
+          <div className="divider"></div>
         <DENRInternship />
+          <div className="divider"></div>
       </section>
     </>
   );

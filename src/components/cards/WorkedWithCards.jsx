@@ -19,10 +19,10 @@ const ProjectCards = () => {
                     Did some Inventory management, Documentation of Preventive Maintenance Schedule (PMS).
                 </p>
                 <div className="justify-center card-actions">
-                    <button className="btn btn-primary w-full">
-                    <i className="bi bi-box-arrow-in-up-right"></i>
-                    Learn more
-                    </button>
+                    <Link className="btn btn-primary w-full" to="/experience#DENRInternship">
+                        <i className="bi bi-box-arrow-in-up-right"></i>
+                        Learn more
+                    </Link>
                 </div>
                 </div>
             </div>

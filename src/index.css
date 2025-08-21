@@ -6,6 +6,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;  /* Improves text rendering on macOS */
+  -moz-osx-font-smoothing: grayscale;  /* Firefox on macOS */ 
+}
+
 :root {
   --theme-toggle-refresh: 0;
 }

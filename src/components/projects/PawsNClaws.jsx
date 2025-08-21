@@ -15,10 +15,10 @@ const PawsNClaws = () => {
                along with my four colleagues. My role mostly revolved on front-end design, development and UI functionality, 
                and a little bit of researching here and there...
             </p>
-            <div className="card max-w-full shadow-sm">
+            <div className="max-w-full">
               <figure className="px-5 flex flex-col gap-2">
-                <img src={img1} alt="Image 1" className="rounded-xl shadow-xl w-auto max-h-[300px]" />
-                <img src={img2} alt="Image 2" className="rounded-xl shadow-xl w-auto max-h-[300px]" />
+                <img src={img1} alt="image 1" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
+                <img src={img2} alt="image 2" className="rounded-xl shadow-xl w-full max-h-[300px] transition-all hover:max-h-[600px] object-cover" />
               </figure>
               <div className="text-xs mb-8 mt-1 items-center text-center">
                 <p>Some screenshots of the site I worked with</p>

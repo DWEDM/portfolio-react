@@ -30,15 +30,6 @@ const Home = ({ themeName }) => {
                         </p>
                         <div className="flex flex-wrap gap-2">
                             <a 
-                                href="https://github.com/denverdelamasa" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
-                            >
-                                <i className="bi bi-github mr-1"></i>
-                                Github
-                            </a>
-                            <a 
                                 href="https://instagram.com/wanedanvers" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
@@ -64,6 +55,51 @@ const Home = ({ themeName }) => {
                             >
                                 <i className="bi bi-envelope-at-fill mr-1"></i>
                                 Email
+                            </a>
+                            <a 
+                                href="https://uiverse.io/profile/denverdelamasa" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            >
+                                <i class="bi bi-link-45deg"></i>
+                                uiverse
+                            </a>
+                            <a 
+                                href="https://dribbble.com/denver-dela-masa" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            >
+                                <i class="bi bi-dribbble"></i>
+                                Dribble
+                            </a>
+                            <a 
+                                href="https://leetcode.com/u/denverdelamasa/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            >
+                                <i class="bi bi-link-45deg"></i>
+                                Leetcode
+                            </a>
+                            <a 
+                                href="https://github.com/denverdelamasa" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            >
+                                <i className="bi bi-github mr-1"></i>
+                                Github
+                            </a>
+                            <a 
+                                href="https://www.duolingo.com/profile/Wyaneee" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            >
+                                <i class="bi bi-link-45deg"></i>
+                                Duolingo
                             </a>
                         </div>
                     </div>
