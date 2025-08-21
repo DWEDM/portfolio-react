@@ -1,29 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import { fetchGitHubContributions } from "../utils/githubApi";
 
-const COLOR_PALETTES = {
-  dracula: [
-    "#414558", // Base
-    "#6272a4", // Low activity
-    "#8be9fd", // Medium activity
-    "#ff79c6", // High activity
-    "#f1fa8c", // Peak activity
-  ],
-  nord: [
-    "#E5E9F0", // Base
-    "#81A1C1", // Low activity
-    "#5E81AC", // Medium activity
-    "#D08770", // High activity
-    "#BF616A", // Peak activity
-  ],
-  spicy: [
-    "#414863", // Base
-    "#7C9EB2", // Low activity
-    "#B48EAD", // Medium activity
-    "#FF7E9D", // High activity
-    "#FFB347", // Peak activity
-  ],
-};
+// Single yellow-based palette that works for both light and dark themes
+const YELLOW_PALETTE = [
+  "#fef3c71a", // Base with 50% opacity
+  "#fde68a90", // Low activity with 56% opacity
+  "#fcd34da0", // Medium activity with 63% opacity
+  "#fbbf24b0", // High activity with 69% opacity
+  "#f59e0bff", // Peak activity with full opacity
+];
 
 const ACTIVITY_LEVELS = [
   { threshold: 0, description: "No activity" },
@@ -40,7 +25,7 @@ const WEEK_WIDTH = SQUARE_SIZE + GAP;
 const GRID_HEIGHT = (SQUARE_SIZE * 7) + (GAP * 6);
 const MONTH_LABEL_HEIGHT = 20;
 
-export default function GitHubStats({ themeName = "spicy" }) {
+export default function GitHubStats() {
   const [year, setYear] = useState(new Date().getFullYear());
   const [contributions, setContributions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -50,7 +35,6 @@ export default function GitHubStats({ themeName = "spicy" }) {
   
   const gridRef = useRef(null);
 
-  const activePalette = COLOR_PALETTES[themeName] ?? COLOR_PALETTES.spicy;
   const years = Array.from({ length: 5 }, (_, i) => new Date().getFullYear() - i);
 
   // Detect touch devices
@@ -91,10 +75,10 @@ export default function GitHubStats({ themeName = "spicy" }) {
   const getColor = (count) => {
     for (let i = ACTIVITY_LEVELS.length - 1; i >= 0; i--) {
       if (count >= ACTIVITY_LEVELS[i].threshold) {
-        return activePalette[i];
+        return YELLOW_PALETTE[i];
       }
     }
-    return activePalette[0];
+    return YELLOW_PALETTE[0];
   };
 
   useEffect(() => {
