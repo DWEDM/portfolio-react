@@ -24,17 +24,17 @@ const About = ({ setActivePage }) => {
             <div className="my-2">
               <h1 className="text-3xl font-bold fade-up-scroll">About Me</h1>
               <p className="mb-5 font-paragraph fade-up-scroll">
-                My skills are mainly hardware maintenance, PC repairs, and troubleshooting. Diagnosing 
-                and restoring malfunctioning hardware not only challenges me, but also gives me a sense 
-                of fulfillment especially when I see systems brought back to life.
+                My skills focus on hardware maintenance, PC repair, and troubleshooting. 
+                I enjoy diagnosing issues and bringing systems back to life — it’s both challenging 
+                and rewarding to restore something to full working order.
               </p>
-              <div className="card card-body text-lg italic border-2 my-4 border-accent shadow-2xl fade-up-scroll max-w-[600px]">
+              <div className="card card-body text-lg italic border-2 my-8 border-accent shadow-lg fade-up-scroll max-w-[600px]">
                 "To me, learning is a privilege. It gives us the opportunity to grow, to adapt, 
                 and to overcome the challenges that shapes our very being."
               </div>
               <p className="mb-5 font-paragraph fade-up-scroll">
-                Aside from that, my skills are also consisted with Art and Design, Mainly Illustration.
-                I also do coding, specifically front-end web development, hence this web portfolio...
+                I also have a creative side — I do art and design, mainly digital illustration. On top of that, 
+                I code too, focusing on front-end web development, which is why I built this portfolio.
               </p>
               <Link to="/gallery">
                 <button className="btn btn-primary fade-up-scroll">
@@ -48,20 +48,19 @@ const About = ({ setActivePage }) => {
                 <div className="my-4">
                   <h1 className="text-3xl font-bold mt-12 mb-4 fade-up-scroll">What keeps me busy beyond coding?</h1>
                   <p className="mb-5 font-paragraph fade-up-scroll">
-                      When I'm not coding, I do a mix of creative and community activities. 
-                      I spend some of my free time doing digital art, mainly character illustrations mainly 
-                      for fun and to study a little bit of Art theory. I can also say that music plays a big part of my life,
-                      I play a little bit of guitar, and bass. But my main instrument is Drums. I am a member of our church's PAW team,
-                      and yes, I am a drummer.  
+                    Outside of coding, I dive into creative and community activities. I love doing digital art, mostly character 
+                    illustrations — sometimes just for fun, sometimes to study art theory. Music is also a big part of me: I play a 
+                    bit of guitar and bass, but the drums are my main thing. I’m part of our church’s PAW team, where I get to serve 
+                    as a drummer.
                   </p>
                   <div className="my-12 flex-wrap flex text-content">
                     <img src={sampleart} alt="sample art from my insta" className='w-full h-auto max-h-[400px] object-cover' />
                     <p className="text-xs text-accent"></p>
                   </div>
                   <p className="mb-5 font-paragraph fade-up-scroll">
-                    I also enjoy playing video games, mainly League of Legends, but I found myself enjoying a 
-                    little bit of indie games like stardew valley, and blasphemous, games that have a really challenging mechanics, 
-                    and also a good story/lore.
+                    I like playing video games too — mostly League of Legends, but I’ve also grown to enjoy indie games 
+                    like Stardew Valley and Blasphemous. What I love most are games that challenge me with their mechanics 
+                    while also pulling me in with great stories and lore.
                   </p>
                 </div>
 
@@ -74,13 +73,16 @@ const About = ({ setActivePage }) => {
                   </p>
                   <ul className="list-disc list-inside space-y-2 fade-up-scroll">
                     <li>
-                      <strong>People & Communication:</strong> I’m good at building genuine connections and working well with people, sharing ideas in a way that clicks, and teaming up with all kinds of groups. I always try to keep a positive, professional vibe no matter what.
+                      <strong>People & Communication – </strong> 
+                      Skilled at building genuine connections, sharing ideas clearly, and collaborating with diverse teams while maintaining a positive and professional approach.
                     </li>
                     <li>
-                      <strong>Calm, Patient & Quick Learner:</strong> I’m a fast learner who stays patient and calm, even when things get tricky. I like taking my time to think things through and adapt, rather than rushing. When challenges pop up, I stay steady, figure out what needs to be done, and keep moving forward.
+                      <strong>Calm, Patient & Quick Learner – </strong> 
+                      Adaptable and steady under pressure, with the ability to learn quickly, think things through, and handle challenges without rushing.
                     </li>
                     <li>
-                      <strong>Committed & Practical:</strong> I’m committed to what I do and take my responsibilities seriously, but I keep things grounded and practical. I focus on what needs to get done and treat it as my role, making sure I deliver without overcomplicating things.
+                      <strong>Committed & Practical – </strong> 
+                      Dedicated and responsible, with a focus on delivering results efficiently by keeping solutions grounded and practical.
                     </li>
                   </ul>
                 </div>
