@@ -1,14 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { fetchGitHubContributions } from "../utils/githubApi";
 
-// Single yellow-based palette that works for both light and dark themes
-const YELLOW_PALETTE = [
-  "#fef3c71a", // Base with 50% opacity
-  "#fde68a90", // Low activity with 56% opacity
-  "#fcd34da0", // Medium activity with 63% opacity
-  "#fbbf24b0", // High activity with 69% opacity
-  "#f59e0bff", // Peak activity with full opacity
+// Single palette that works for both light and dark themes
+const PALETTE = [
+  "rgba(156, 163, 175, 0.15)", // Base — cool gray (slate-like)
+  "rgba(129, 140, 248, 0.3)",  // Low — bluish-gray (cool)
+  "rgba(107, 114, 128, 0.65)", // Medium — neutral gray
+  "rgba(168, 162, 158, 0.85)", // High — warm gray (taupe-ish)
+  "rgba(120, 113, 108, 1.0)",  // Peak — strong warm gray (almost brownish)
 ];
+
 
 const ACTIVITY_LEVELS = [
   { threshold: 0, description: "No activity" },
@@ -75,10 +76,10 @@ export default function GitHubStats() {
   const getColor = (count) => {
     for (let i = ACTIVITY_LEVELS.length - 1; i >= 0; i--) {
       if (count >= ACTIVITY_LEVELS[i].threshold) {
-        return YELLOW_PALETTE[i];
+        return PALETTE[i];
       }
     }
-    return YELLOW_PALETTE[0];
+    return PALETTE[0];
   };
 
   useEffect(() => {
@@ -147,16 +148,16 @@ export default function GitHubStats() {
     <div className="text-content px-2 mx-auto">
       <header className="flex justify-between items-center mb-4 md:mb-6 gap-4 flex-wrap">
         <div>
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-content">
-            GitHub Contributions
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-content">
+            GitHub Activity
           </h1>
           <p className="text-xs md:text-sm font-normal text-content/80 mt-1">
-            {year} Activity Overview
+            A snapshot of my contributions and projects in <strong>{year}</strong>.
           </p>
         </div>
       </header>
       
-      <div className="w-[85vw] lg:w-fit xl-w-auto p-2 md:p-6 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="w-[85vw] lg:w-fit xl-w-auto p-2 md:p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 bg-base-100 border-2 border-accent">
         <div 
           ref={gridRef}
           className="relative overflow-auto" 

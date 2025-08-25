@@ -10,7 +10,7 @@ const MyQuote = () => {
   }, []);
 
   return (
-    <div className="relative w-full my-16 md:my-24 lg:my-32 rounded-2xl overflow-hidden min-h-[500px] flex items-center justify-center group">
+    <div className="relative w-full my-16 md:my-24 lg:my-32 rounded-2xl overflow-hidden min-h-[500px] flex items-center justify-center group border-2 border-accent">
       {/* Background with parallax effect */}
       <div 
         className="absolute inset-0 w-full h-full transition-transform duration-700"
@@ -24,7 +24,7 @@ const MyQuote = () => {
       ></div>
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-900/70 to-indigo-900/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/70 to-gray-900/90"></div>
       
       {/* Animated stars effect */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">

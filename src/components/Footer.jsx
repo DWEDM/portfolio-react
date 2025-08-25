@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-    <footer className="footer sm:footer-horizontal   text-info lg:px-28 px-8 py-24 border-t-1 border-base-300 shadow-xl justify-between">
+    <footer className="footer sm:footer-horizontal text-content lg:px-28 px-8 py-24 border-t-1 border-accent shadow-xl justify-between">
       <div>
         <p>
           I made this site with:
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="navbar-end w-auto h-auto">
-        <p className=" text-info">© Copyright Denver Dela Masa, All rights reserved.</p>
+        <p>© Copyright Denver Dela Masa, All rights reserved.</p>
       </div>
     </footer>
     </>

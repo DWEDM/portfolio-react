@@ -39,7 +39,7 @@ const Home = ({ themeName }) => {
                             href="https://instagram.com/wanedanvers" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-instagram mr-1"></i>
                             Instagram
@@ -48,7 +48,7 @@ const Home = ({ themeName }) => {
                             href="https://linkedin.com/in/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-linkedin mr-1"></i>
                             LinkedIn
@@ -57,7 +57,7 @@ const Home = ({ themeName }) => {
                             href="mailto:denver.delamasa@gmail.com" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-envelope-at-fill mr-1"></i>
                             Email
@@ -66,7 +66,7 @@ const Home = ({ themeName }) => {
                             href="https://uiverse.io/profile/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             uiverse
@@ -75,7 +75,7 @@ const Home = ({ themeName }) => {
                             href="https://dribbble.com/denver-dela-masa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-dribbble"></i>
                             Dribble
@@ -84,7 +84,7 @@ const Home = ({ themeName }) => {
                             href="https://leetcode.com/u/denverdelamasa/" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             Leetcode
@@ -93,7 +93,7 @@ const Home = ({ themeName }) => {
                             href="https://github.com/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-github mr-1"></i>
                             Github
@@ -102,7 +102,7 @@ const Home = ({ themeName }) => {
                             href="https://www.duolingo.com/profile/Wyaneee" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-soft badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             Duolingo
@@ -114,8 +114,10 @@ const Home = ({ themeName }) => {
                 <div id="" className="hero-content h-auto w-full justify-start">
                     <div className='fade-up-scroll mx-auto'>
                         <h1 className="text-4xl font-bold mb-2">What I’ve Worked On:</h1>
-                        <p className="text-base-content mb-7 text-md">
-                            A showcase of the projects and experiences that shaped me...
+                        <p className="text-base-content mb-7 text-md max-w-prose">
+                            Here’s a showcase of the projects and experiences that shaped my journey. From solving 
+                            technical problems to building creative solutions, these works highlight what I’ve learned 
+                            and what I enjoy creating.
                         </p>
                         <div className="w-full h-auto flex-wrap flex gap-8">
                             <WorkedWithCards/>
@@ -130,8 +132,9 @@ const Home = ({ themeName }) => {
                 <div id="" className="hero-content h-auto w-full justify-start">
                     <div className='fade-up-scroll mx-auto'>
                         <h1 className="text-4xl font-bold mb-2">What I'm currently up to:</h1>
-                        <p className="text-base-content mb-7 text-md">
-                            Things I am currently working on to improve my current knowledge...
+                        <p className="text-base-content mb-7 text-md max-w-prose">
+                            What I’m currently up to: A peek at the projects and learning goals I’m focused on 
+                            right now as I continue growing and leveling up my skills.
                         </p>
                         <div className="w-full h-auto flex-col flex gap-2 px-12">
                             <CurrentlyWorkingCards/>

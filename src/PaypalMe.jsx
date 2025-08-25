@@ -17,9 +17,7 @@ const PaypalMeButton = ({ theme, onClick, icon }) => {
       {/* Tooltip */}
       {showTooltip && (
         <div 
-          className={`absolute bottom-full right-0 mb-2 px-3 py-2 rounded-lg shadow-lg transition-opacity duration-300 ${
-            theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
-          }`}
+          className={`absolute bottom-full right-0 mb-2 px-3 py-2 rounded-lg shadow-lg transition-opacity duration-300 bg-base-300`}
           style={{ width: 'max-content' }}
         >
           <span className="text-sm font-medium">Feeling generous? Buy me a coffee! ☕</span>
@@ -38,11 +36,7 @@ const PaypalMeButton = ({ theme, onClick, icon }) => {
           setIsHovered(false);
           setShowTooltip(false);
         }}
-        className={`w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
-          theme === 'dark' 
-            ? 'bg-amber-600 hover:bg-amber-700 text-white' 
-            : 'bg-amber-500 hover:bg-amber-600 text-white'
-        }`}
+        className={`w-14 h-14 rounded-lg border-2 border-warning flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105`}
         style={{
           transform: isHovered ? 'scale(1.1)' : 'scale(1)',
           boxShadow: isHovered 
