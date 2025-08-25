@@ -39,7 +39,7 @@ const Home = ({ themeName }) => {
                             href="https://instagram.com/wanedanvers" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-instagram mr-1"></i>
                             Instagram
@@ -48,7 +48,7 @@ const Home = ({ themeName }) => {
                             href="https://linkedin.com/in/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-linkedin mr-1"></i>
                             LinkedIn
@@ -57,7 +57,7 @@ const Home = ({ themeName }) => {
                             href="mailto:denver.delamasa@gmail.com" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-envelope-at-fill mr-1"></i>
                             Email
@@ -66,7 +66,7 @@ const Home = ({ themeName }) => {
                             href="https://uiverse.io/profile/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             uiverse
@@ -75,7 +75,7 @@ const Home = ({ themeName }) => {
                             href="https://dribbble.com/denver-dela-masa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-dribbble"></i>
                             Dribble
@@ -84,7 +84,7 @@ const Home = ({ themeName }) => {
                             href="https://leetcode.com/u/denverdelamasa/" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             Leetcode
@@ -93,7 +93,7 @@ const Home = ({ themeName }) => {
                             href="https://github.com/denverdelamasa" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-github mr-1"></i>
                             Github
@@ -102,7 +102,7 @@ const Home = ({ themeName }) => {
                             href="https://www.duolingo.com/profile/Wyaneee" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="fade-up-scroll badge badge-primary hover:underline hover:scale-105 transition-transform duration-200"
+                            className="fade-up-scroll badge badge-info hover:underline hover:scale-105 transition-transform duration-200"
                         >
                             <i className="bi bi-link-45deg"></i>
                             Duolingo
