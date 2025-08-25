@@ -17,9 +17,9 @@ const Home = ({ themeName }) => {
                     </div>
 
                     <div className="w-full lg:max-w-3xl order-2 lg:order-1">
-                        <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold fade-up-scroll">
+                        <h1 className="text-6xl md:text-7xl lg:text-7xl font-[1000] fade-up-scroll">
                             Illustrator. <br></br>
-                            Front-End Dev. <br></br>
+                            Web Dev. <br></br>
                             Tech Support.
                         </h1>
                         <p className="py-4 md:py-6 fade-up-scroll text-sm">
