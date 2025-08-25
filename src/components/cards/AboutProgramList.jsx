@@ -50,6 +50,14 @@ const AboutProgramList = () => {
                 Bootstrap Studio – Drag-and-drop website builder
             </li>
             <li className="flex items-center gap-3">
+                <img className="w-6 h-6 object-contain rounded-sm" src="https://static.vecteezy.com/system/resources/previews/021/059/825/non_2x/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="icon" />
+                ChatGPT – AI assistant for coding, writing, and learning
+            </li>
+            <li className="flex items-center gap-3">
+                <img className="w-6 h-6 object-contain rounded-sm" src="https://images.seeklogo.com/logo-png/61/2/deepseek-ai-icon-logo-png_seeklogo-611473.png" alt="icon" />
+                Deepseek – AI tool for code-related queries and research
+            </li>
+            <li className="flex items-center gap-3">
                 <img className="w-6 h-6 object-contain rounded-sm" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="icon" />
                 Git – Version control system
             </li>
@@ -58,20 +66,16 @@ const AboutProgramList = () => {
                 GitHub – Code hosting and collaboration platform
             </li>
             <li className="flex items-center gap-3">
+                <img className="w-6 h-6 object-contain rounded-sm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITHn_TgjDyhdWvePNw0mveDrTUr00GLfv_Q&s" alt="MongoDB icon" />
+                MongoDB Community Server - NoSQL database
+            </li>
+            <li className="flex items-center gap-3">
                 <img className="w-6 h-6 object-contain rounded-sm" src="https://code.visualstudio.com/assets/updates/1_35/logo-stable.png" alt="icon" />
                 VS Code – Source code editor by Microsoft
             </li>
             <li className="flex items-center gap-3">
                 <img className="w-6 h-6 object-contain rounded-sm" src="https://cdn2.iconfinder.com/data/icons/pack1-baco-flurry-icons-style/512/XAMPP.png" alt="icon" />
                 XAMPP – Local web server stack (Apache, MySQL, PHP)
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://static.vecteezy.com/system/resources/previews/021/059/825/non_2x/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="icon" />
-                ChatGPT – AI assistant for coding, writing, and learning
-            </li>
-            <li className="flex items-center gap-3">
-                <img className="w-6 h-6 object-contain rounded-sm" src="https://images.seeklogo.com/logo-png/61/2/deepseek-ai-icon-logo-png_seeklogo-611473.png" alt="icon" />
-                Deepseek – AI tool for code-related queries and research
             </li>
             </ul>
         </li>
@@ -101,6 +105,10 @@ const AboutProgramList = () => {
             <li className="flex items-center gap-3">
                 <img className="w-6 h-6 object-contain rounded-sm" src="https://img.daisyui.com/images/daisyui/mark-static.svg" alt="icon" />
                 daisyUI – TailwindCSS component library
+            </li>
+            <li className="flex items-center gap-3">
+                <img className="w-6 h-6 object-contain rounded-sm" src="https://spng.pngfind.com/pngs/s/136-1363736_express-js-icon-png-transparent-png.png" alt="Express.js icon" />
+                Express.js - Backend web framework
             </li>
             <li className="flex items-center gap-3">
                 <img className="w-6 h-6 object-contain rounded-sm" src="https://edvantou.com/wp-content/uploads/2025/04/0x0.png" alt="icon" />

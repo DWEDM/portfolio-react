@@ -3,6 +3,7 @@ import React from "react";
 import freecodecamp from '../../assets/gallery/freecodecamp-first-activity.webp';
 import kodekloud from '../../assets/gallery/KodeKloud-Docker.webp';
 import Operating from '../../assets/gallery/operating.webp';
+import mernproject from '../../assets/gallery/mern-skeleton-project.png';
 
 const ProjectCards = () => {
     return(
@@ -57,6 +58,25 @@ const ProjectCards = () => {
                     <p className="text-sm p-0">
                         Currently working as a volunteer in the technical team of Bethany United Methodist Church,
                         where I help with the technical aspects of the church's services, including sound and video production.
+                    </p>
+                </div>
+            </div>
+            <div className="divider my-4"></div>
+            <div className="fade-up-scroll py-4 flex lg:flex-row flex-col-reverse gap-4">
+                    <figure className="md:w-1/2 lg:w-2/5 flex items-center">
+                        <img 
+                            src={mernproject} 
+                            alt="mern skeleton project" 
+                            className="rounded-xl my-auto w-full h-auto object-cover max-h-[200px]"
+                        />
+                    </figure>
+                <div className="flex flex-col gap-2 my-auto md:w-1/2 lg:w-3/5">
+                    <h2 className="card-title text-2xl">MERN stack project| Open source template</h2>
+                    <p className="text-sm mb-2 p-0">Started at August 2025</p>  
+                    <p className="text-sm p-0">
+                        I'm making a MERN stack skeleton project that can be used as a template for future projects.
+                        This project is still in the early stages of development, but I plan to add more features and
+                        functionality in the future.
                     </p>
                 </div>
             </div>
