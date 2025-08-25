@@ -5,6 +5,7 @@ import PawsNClaws from '../projects/PawsNClaws';
 import DENRInternship from '../projects/DENRInternship';
 
 import ExperiencesParallax from '../cards/ExperiencesParallax';
+import SEO from "../SEO";
 
 const Experience = () => {
   useEffect(() => {
@@ -25,6 +26,10 @@ const Experience = () => {
 
   return (
     <>
+    <SEO 
+      title="Experience | Denver Dela Masa" 
+      description="Explore my professional experience in IT support, preventive maintenance, web development, and creative design. Learn how my skills and background can contribute to future projects." 
+    />
       <section id="Experience" className="hero flex flex-col m-0 transition-all duration-300">
         <ExperiencesParallax/>
         <div className="px-0 sm:px-4 md:px-18 lg:px-34">

@@ -1,9 +1,14 @@
 import React from 'react';
 import ConsoleTerminal from '../console/ConsoleTerminal';
+import SEO from "../SEO";
 
 const ConsoleApps = () => {
   return (
     <>
+      <SEO 
+        title="Console Projects | Denver Dela Masa" 
+        description="Showcasing my early console-based applications built with Python. Explore projects created using Pyoide and discover my programming journey from the basics to more advanced development." 
+      />
       <section id="Console" className="hero flex flex-col h-auto w-[90vw] md:w-[70vw]">
         <div className='hero-content w-full flex flex-col h-auto py-4 my-6 mx-auto'>
             <div className="w-full justify-center text-center">

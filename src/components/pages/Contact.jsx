@@ -1,9 +1,14 @@
 import React from 'react';
 import EmailJS from '../../utils/EmailJS';
+import SEO from "../SEO";
 
 const Contact = () => {
   return (
     <>
+      <SEO 
+        title="Contact | Denver Dela Masa" 
+        description="Get in touch with Denver Dela Masa for collaborations, freelance projects, or professional opportunities. Reach out via email, social media, or the contact form." 
+      />
       <section id="Contact" className="hero mx-auto   flex items-center justify-center px-4 pb-4">
         <div className="hero-content h-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Coffee art */}

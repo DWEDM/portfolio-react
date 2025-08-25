@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 
 import GalleryParallax from '../cards/GalleryParallax';
+import SEO from "../SEO";
 
 // --- Auto-import media from src/assets/gallery/ ---
 const modules = import.meta.glob("../../assets/gallery/*.{png,jpg,jpeg,gif,webp}", {
@@ -47,39 +48,45 @@ const Collage = () => {
   const mediaItems = useMemo(() => shuffle(importedMedia), []);
 
   return (
-    <section className="hero flex flex-col">
-      <GalleryParallax />
-      <div className="hero-content flex flex-col text-left">
-        {/* Masonry Gallery */}
-        <section className="columns-2 md:columns-3 gap-4 my-12 px-6">
-          {mediaItems.length === 0 ? (
-            <div className="text-center opacity-70 col-span-full">
-              No media found in <code>src/assets/gallery/</code>.
-            </div>
-          ) : (
-            mediaItems.map((item, i) => (
-              <div 
-                key={`${item.alt}-${i}`} 
-                className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="w-full h-auto object-cover rounded-lg bg-gray-100"
-                  loading="lazy"
-                  width="100%"
-                  height="auto"
-                />
+    <>
+      <SEO 
+        title="Gallery | Denver Dela Masa" 
+        description="Browse a curated gallery of my works and experiences, including graphic design, digital illustrations, and web development projects. A visual showcase of creativity and technical expertise." 
+      />
+      <section className="hero flex flex-col">
+        <GalleryParallax />
+        <div className="hero-content flex flex-col text-left">
+          {/* Masonry Gallery */}
+          <section className="columns-2 md:columns-3 gap-4 my-12 px-6">
+            {mediaItems.length === 0 ? (
+              <div className="text-center opacity-70 col-span-full">
+                No media found in <code>src/assets/gallery/</code>.
               </div>
-            ))
-          )}
-        </section>
+            ) : (
+              mediaItems.map((item, i) => (
+                <div 
+                  key={`${item.alt}-${i}`} 
+                  className="fade-up-scroll mb-4 break-inside-avoid rounded-lg overflow-hidden shadow-md"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-auto object-cover rounded-lg bg-gray-100"
+                    loading="lazy"
+                    width="100%"
+                    height="auto"
+                  />
+                </div>
+              ))
+            )}
+          </section>
 
-        <div className="w-full h-auto m-auto text-center">
-          <h1 className="fade-up-scroll m-auto w-full">More content coming soon!</h1>
+          <div className="w-full h-auto m-auto text-center">
+            <h1 className="fade-up-scroll m-auto w-full">More content coming soon!</h1>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

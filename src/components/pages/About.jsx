@@ -7,10 +7,15 @@ import AboutHero from '../cards/AboutHero';
 import sampleart from '../../assets/gallery/art/9.webp';
 
 import AboutProgramList from '../cards/AboutProgramList';
+import SEO from "../SEO";
 
 const About = ({ setActivePage }) => {
   return (
     <>
+    <SEO 
+      title="About Me | Denver Dela Masa" 
+      description="Learn more about Denver Dela Masa, a creative professional with experience in graphic design, art illustration, IT support, and front-end web development. Discover my journey and skills." 
+    />
     <section id="About" className="hero h-auto  pt-12">
       <div className="hero-content text-left flex flex-col items-start">
         <div className="flex flex-col lg:flex-row gap-x-2"> 
